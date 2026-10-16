@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="#f4efe5" name="theme-color"/>
+<meta content="Интерактивная презентация о имени существительном: значение, разряды, род, число, падеж, склонение и синтаксическая роль." name="description"/>
+<title>Имя существительное — интерактивный разбор</title>
+<style>
+:root{--paper:#f4efe5;--paper2:#fffaf1;--ink:#20211f;--muted:#77766f;--red:#e74737;--blue:#374fe2;--yellow:#f0dc57;--green:#437a5b;--line:rgba(32,33,31,.17);--mono:"Courier New",monospace;--sans:Inter,"Segoe UI",Arial,sans-serif;--display:"Arial Black",Impact,Arial,sans-serif;--serif:Georgia,"Times New Roman",serif;--mx:50vw;--my:45vh}
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:var(--paper);color:var(--ink);font-family:var(--sans)}button,input{font:inherit}button{color:inherit}button:focus-visible,input:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;opacity:.16;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.18'/%3E%3C/svg%3E");mix-blend-mode:multiply}
+.deck{position:relative;width:100vw;height:100svh;overflow:hidden;isolation:isolate;background:var(--paper)}
+.deck:before{content:"";position:absolute;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(ellipse at var(--mx) var(--my),rgba(231,71,55,.06),transparent 48%),repeating-linear-gradient(0deg,transparent 0 79px,rgba(32,33,31,.024) 80px 81px)}
+.topbar{position:absolute;left:4vw;right:4vw;top:20px;display:flex;justify-content:space-between;gap:20px;align-items:center;z-index:20;font:10px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:#696860}.brand{font-weight:bold;color:var(--ink);display:flex;align-items:center;gap:9px}.brand-mark{display:inline-grid;place-items:center;width:21px;height:21px;background:var(--red);color:white;font:900 13px var(--display);transform:rotate(-7deg)}
+.slides{position:absolute;inset:0}.slide{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:7.6vh 8vw 9vh;overflow-y:auto;overflow-x:hidden;opacity:0;visibility:hidden;transform:translateX(3vw) scale(.99);filter:blur(4px);transition:opacity .38s ease,transform .55s cubic-bezier(.2,.8,.2,1),filter .4s,visibility .38s;pointer-events:none;background:var(--paper)}.slide.active{opacity:1;visibility:visible;transform:translateX(0) scale(1);filter:blur(0);z-index:2;pointer-events:auto}.slide.before{transform:translateX(-3vw) scale(1.01)}.slide>.content{width:min(100%,1180px);margin:auto;position:relative;z-index:1}.slide.dark{background:var(--ink);color:var(--paper)}.slide.red{background:var(--red);color:white}.slide.blue{background:var(--blue);color:white}.slide.yellow{background:var(--yellow);color:var(--ink)}.slide.cream{background:var(--paper2)}
+.slide:after{content:attr(data-plate);position:absolute;right:3vw;top:23%;writing-mode:vertical-rl;font:9px var(--mono);letter-spacing:.2em;opacity:.36;pointer-events:none}.slide.dark:after,.slide.red:after,.slide.blue:after{opacity:.42}
+.eyebrow{display:flex;align-items:center;gap:9px;text-transform:uppercase;font:700 10px var(--mono);letter-spacing:.16em;color:var(--red);margin-bottom:clamp(12px,2.3vh,24px)}.eyebrow:before{content:"✳";font:17px Arial,sans-serif}.dark .eyebrow,.red .eyebrow,.blue .eyebrow{color:var(--yellow)}.yellow .eyebrow{color:var(--blue)}
+h1,h2,h3,p{margin:0}h1,h2{font-family:var(--display);font-weight:900;letter-spacing:-.065em;text-wrap:balance;line-height:.94}h1{font-size:clamp(46px,8vw,120px)}h2{font-size:clamp(34px,6vw,86px)}h3{font-size:clamp(18px,2vw,27px);line-height:1.05;letter-spacing:-.035em}p{line-height:1.5}em{font-style:normal;color:var(--red)}.dark em,.red em,.blue em{color:var(--yellow)}.yellow em{color:var(--blue)}.serif{font-family:var(--serif);font-weight:700;letter-spacing:-.07em}.muted{color:var(--muted)}.dark .muted,.red .muted,.blue .muted{color:rgba(255,255,255,.68)}.small{font-size:clamp(12px,1.1vw,15px);line-height:1.55}.tiny{font:10px var(--mono);letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}.dark .tiny,.red .tiny,.blue .tiny{color:rgba(255,255,255,.65)}.lead{font-size:clamp(16px,1.6vw,22px);line-height:1.4;max-width:760px}.rule{height:1px;background:var(--line);margin:20px 0}.dark .rule,.red .rule,.blue .rule{background:rgba(255,255,255,.2)}.redline{display:inline-block;position:relative}.redline:after{content:"";position:absolute;left:0;right:-3%;height:.13em;bottom:-.02em;background:var(--red);transform:rotate(-1.2deg);z-index:-1}.dark .redline:after{background:var(--yellow)}
+.cover{background:#222320;color:var(--paper);isolation:isolate}.cover:before{content:"";position:absolute;width:50vw;aspect-ratio:1;right:-5vw;top:8vh;border:1px solid rgba(244,239,229,.35);border-radius:50%;box-shadow:0 0 0 2.6vw rgba(244,239,229,.045),0 0 0 7vw rgba(231,71,55,.09),0 0 0 13vw rgba(55,79,226,.07);z-index:-1}.cover .content{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:2vw}.cover-title{margin:2vh 0 3vh;font-size:clamp(56px,9.1vw,136px);line-height:.78;letter-spacing:-.09em}.cover-title .block{display:block;font-size:.49em;letter-spacing:-.06em;line-height:1.05;margin-top:.28em;color:var(--yellow);max-width:7.5em}.cover-deck{max-width:390px;color:rgba(244,239,229,.76);font-size:clamp(14px,1.4vw,19px)}.cover-meta{display:flex;justify-content:space-between;gap:20px;align-items:center;border-top:1px solid rgba(244,239,229,.22);margin-top:4vh;padding-top:16px;max-width:620px;font:10px var(--mono);letter-spacing:.09em;text-transform:uppercase;color:rgba(244,239,229,.62)}.cover-meta strong{color:var(--paper);font-weight:500}.cover-art{position:relative;min-height:390px;height:55vh;display:grid;place-items:center}.cover-sticker{position:absolute;z-index:3;background:var(--red);color:white;padding:11px 15px;font:10px var(--mono);letter-spacing:.1em;transform:rotate(-8deg);top:10%;right:2%}.cover-orbit{width:min(31vw,390px);aspect-ratio:1;border:1px solid rgba(244,239,229,.5);border-radius:50%;position:relative;display:grid;place-items:center;animation:slowspin 45s linear infinite}.cover-orbit:before,.cover-orbit:after{content:"";position:absolute;inset:13%;border:1px dashed rgba(244,239,229,.42);border-radius:50%;transform:rotateX(58deg)}.cover-orbit:after{inset:25%;border-style:solid;border-color:rgba(231,71,55,.7);transform:rotateY(60deg)}.orbit-core{width:56%;aspect-ratio:1;border-radius:50%;background:var(--yellow);color:var(--ink);display:grid;place-items:center;font:900 clamp(26px,4vw,56px) var(--display);letter-spacing:-.1em;transform:rotate(-12deg);box-shadow:12px 12px 0 var(--red);animation:float 5s ease-in-out infinite}.orbit-word{position:absolute;padding:7px 10px;background:var(--paper);color:var(--ink);font:700 11px var(--mono);text-transform:uppercase;box-shadow:4px 4px 0 rgba(0,0,0,.22);transform:rotate(-5deg)}.ow1{top:16%;left:-2%}.ow2{right:-3%;top:36%;transform:rotate(7deg)}.ow3{left:7%;bottom:17%;transform:rotate(4deg)}.ow4{right:9%;bottom:12%;background:var(--blue);color:white;transform:rotate(-7deg)}
+@keyframes slowspin{to{transform:rotate(360deg)}}@keyframes float{0%,100%{translate:0 0;rotate:-12deg}50%{translate:0 -10px;rotate:-8deg}}@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}.slide.active .enter{animation:rise .58s both cubic-bezier(.2,.8,.2,1)}.slide.active .d2{animation-delay:.12s}.slide.active .d3{animation-delay:.22s}.slide.active .d4{animation-delay:.32s}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:clamp(12px,2vw,24px);margin-top:clamp(18px,3vh,32px)}.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:clamp(18px,3vh,32px)}.grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:clamp(18px,3vh,32px)}.grid6{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:clamp(18px,3vh,32px)}.card{position:relative;min-width:0;border:1px solid var(--line);background:rgba(255,255,255,.42);padding:clamp(14px,2vw,24px);text-align:left;overflow:hidden;transition:transform .22s,border-color .22s,background .22s;cursor:pointer}.dark .card,.red .card,.blue .card{border-color:rgba(255,255,255,.25);background:rgba(255,255,255,.06)}.card:hover{transform:translateY(-4px) rotate(-.3deg);border-color:var(--red)}.dark .card:hover,.red .card:hover,.blue .card:hover{border-color:var(--yellow)}.card .tag{display:block;font:10px var(--mono);letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}.dark .card .tag,.red .card .tag,.blue .card .tag{color:rgba(255,255,255,.55)}.card .word{display:block;font:900 clamp(21px,3vw,43px)/.96 var(--display);letter-spacing:-.07em;margin:2.1vh 0 1.3vh;overflow-wrap:anywhere}.card p{font-size:clamp(12px,1.08vw,15px);line-height:1.45;color:var(--muted)}.dark .card p,.red .card p,.blue .card p{color:rgba(255,255,255,.75)}.card .reveal{display:block;margin-top:12px;padding-top:10px;border-top:1px solid var(--line);font:10px var(--mono);letter-spacing:.035em;color:var(--red);opacity:0;max-height:0;overflow:hidden;transition:opacity .2s,max-height .3s}.dark .card .reveal,.red .card .reveal,.blue .card .reveal{border-color:rgba(255,255,255,.2);color:var(--yellow)}.card.revealed .reveal{opacity:1;max-height:90px}.card.revealed{background:rgba(231,71,55,.06);border-color:var(--red)}.dark .card.revealed,.red .card.revealed,.blue .card.revealed{background:rgba(240,220,87,.1);border-color:var(--yellow)}
+.definition{display:grid;grid-template-columns:1.2fr .8fr;gap:4vw;align-items:center}.definition-quote{font:700 clamp(23px,3.5vw,50px)/1.17 var(--serif);letter-spacing:-.04em;max-width:750px}.definition-quote mark{background:var(--yellow);color:var(--ink);padding:0 .08em}.definition-side{position:relative;padding:clamp(22px,3vw,40px);background:var(--red);color:white;transform:rotate(2deg);box-shadow:12px 12px 0 var(--ink)}.definition-side .bigmark{font:900 clamp(50px,9vw,120px)/.8 var(--display);color:var(--yellow);letter-spacing:-.1em}.definition-side p{margin-top:20px;font-size:14px;max-width:300px}.split{display:grid;grid-template-columns:1fr .9fr;align-items:center;gap:4vw}.poster-words{position:relative;min-height:250px;display:grid;place-items:center}.poster-words.abstract-art{height:330px;min-height:330px;overflow:hidden}.poster-words.abstract-art .poster-letters{font-size:clamp(55px,8vw,105px);line-height:.78}.poster-words.compact-art{height:250px;min-height:250px;overflow:hidden}.poster-circle{position:absolute;width:76%;aspect-ratio:1;background:var(--yellow);border-radius:50%;right:4%;top:7%;box-shadow:18px 20px 0 var(--red)}.poster-letters{position:relative;font:900 clamp(75px,13vw,175px)/.77 var(--display);letter-spacing:-.12em;transform:rotate(-8deg);color:var(--ink)}.poster-caption{position:absolute;bottom:5%;left:0;background:var(--blue);color:white;padding:12px 15px;font:10px var(--mono);transform:rotate(4deg);max-width:220px}.note-strip{display:flex;align-items:flex-start;gap:12px;padding:13px 16px;border-left:4px solid var(--red);background:rgba(231,71,55,.06);margin-top:20px;max-width:760px}.note-strip b{font:10px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--red);min-width:65px}.note-strip span{font-size:13px;line-height:1.45}.dark .note-strip,.red .note-strip,.blue .note-strip{background:rgba(255,255,255,.07);border-color:var(--yellow)}.dark .note-strip b,.red .note-strip b,.blue .note-strip b{color:var(--yellow)}
+.big-words{display:flex;align-items:baseline;gap:clamp(10px,2vw,24px);flex-wrap:wrap;margin:3vh 0}.abstract-words{display:grid;gap:0;max-width:470px;margin:2vh 0 0}.abstract-words span{font-size:clamp(30px,4.3vw,58px);line-height:.86}.big-words span{font:900 clamp(40px,8.3vw,116px)/.9 var(--display);letter-spacing:-.095em}.big-words span:nth-child(odd){color:var(--red)}.big-words span:nth-child(even){font-family:var(--serif);font-weight:700;transform:rotate(-4deg)}.dark .big-words span:nth-child(odd),.red .big-words span:nth-child(odd),.blue .big-words span:nth-child(odd){color:var(--yellow)}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:3vh}.compare-panel{padding:clamp(18px,3vw,34px);min-height:26vh;position:relative;overflow:hidden;background:var(--paper2);border:1px solid var(--line)}.compare-panel.invert{background:var(--ink);color:var(--paper)}.compare-panel h3{font:900 clamp(22px,3.2vw,44px) var(--display);letter-spacing:-.07em;margin-bottom:12px}.compare-panel .giant{font:900 clamp(32px,5vw,70px) var(--display);letter-spacing:-.08em;color:var(--red);margin:2vh 0}.compare-panel.invert .giant{color:var(--yellow)}.compare-panel p{font-size:clamp(12px,1.1vw,15px);max-width:400px}
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:3vh}.step{border-top:3px solid var(--red);padding:14px 0 0}.step .num{font:900 clamp(38px,5vw,68px)/.9 var(--display);letter-spacing:-.09em;color:var(--red)}.step b{display:block;font-size:15px;margin:12px 0 7px}.step p{font-size:13px;color:var(--muted)}.dark .step,.red .step,.blue .step{border-color:var(--yellow)}.dark .step .num,.red .step .num,.blue .step .num{color:var(--yellow)}.dark .step p,.red .step p,.blue .step p{color:rgba(255,255,255,.72)}
+.gender-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:3vh}.gender-card{border:1px solid var(--line);min-height:25vh;padding:clamp(16px,2vw,26px);background:rgba(255,255,255,.46);cursor:pointer;text-align:left;transition:.2s}.gender-card:hover,.gender-card.selected{border-color:var(--red);transform:translateY(-3px);background:rgba(231,71,55,.065)}.gender-card .pronoun{display:block;font:900 clamp(22px,3vw,44px) var(--display);color:var(--red);letter-spacing:-.07em}.gender-card .example{font:900 clamp(29px,4.5vw,60px) var(--display);letter-spacing:-.08em;display:block;margin:2vh 0 1vh}.gender-card .detail{font-size:12px;color:var(--muted)}.interactive-result{min-height:28px;margin-top:14px;font:11px var(--mono);line-height:1.5;color:var(--red)}.dark .interactive-result,.red .interactive-result,.blue .interactive-result{color:var(--yellow)}
+.number-toggle{display:flex;gap:8px;flex-wrap:wrap;margin:2vh 0}.pill{border:1px solid var(--line);padding:10px 14px;background:transparent;cursor:pointer;transition:.2s;font:10px var(--mono);letter-spacing:.05em;text-transform:uppercase}.pill:hover,.pill.selected{background:var(--red);border-color:var(--red);color:white}.dark .pill,.red .pill,.blue .pill{border-color:rgba(255,255,255,.32)}.dark .pill:hover,.dark .pill.selected,.red .pill:hover,.red .pill.selected,.blue .pill:hover,.blue .pill.selected{background:var(--yellow);border-color:var(--yellow);color:var(--ink)}.number-stage{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:20px;margin-top:2vh;padding:clamp(18px,3vw,34px);border:1px solid var(--line);background:rgba(255,255,255,.45)}.number-stage .noun{font:900 clamp(35px,7vw,95px)/.9 var(--display);letter-spacing:-.1em;text-align:center;transition:transform .3s,color .3s}.number-stage .arrow{font:40px var(--mono);color:var(--red)}.number-stage .noun.active{color:var(--red);transform:scale(1.05) rotate(-2deg)}
+.case-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:7px;margin-top:3vh}.case-button{border:1px solid var(--line);background:rgba(255,255,255,.42);padding:15px 6px;cursor:pointer;text-align:center;transition:.2s;min-width:0}.case-button strong{display:block;font:900 clamp(17px,2vw,27px) var(--display);letter-spacing:-.06em}.case-button small{display:block;margin-top:7px;font:9px var(--mono);color:var(--muted);line-height:1.4}.case-button:hover,.case-button.active{background:var(--red);border-color:var(--red);color:white}.case-button:hover small,.case-button.active small{color:rgba(255,255,255,.8)}.case-display{margin-top:14px;padding:clamp(18px,3.5vw,38px);background:var(--ink);color:var(--paper);min-height:19vh;position:relative}.case-display .sentence{font:700 clamp(24px,4vw,54px)/1.1 var(--serif);letter-spacing:-.04em}.case-display .sentence span{color:var(--yellow)}.case-display .case-explain{margin-top:12px;font:10px var(--mono);letter-spacing:.055em;color:rgba(255,255,255,.63)}
+.declension-table{width:100%;border-collapse:collapse;margin-top:3vh;background:rgba(255,255,255,.34);font-size:clamp(12px,1.1vw,15px)}.declension-table th,.declension-table td{padding:14px 16px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}.declension-table th{font:10px var(--mono);text-transform:uppercase;letter-spacing:.07em;color:var(--red)}.declension-table td:first-child{font:900 clamp(17px,2vw,25px) var(--display);letter-spacing:-.06em}.declension-table tr:last-child td{border-bottom:0}.formula{background:var(--yellow);padding:clamp(17px,2.5vw,28px);font:900 clamp(20px,3.2vw,42px)/1.08 var(--display);letter-spacing:-.06em;transform:rotate(-1deg);box-shadow:8px 8px 0 var(--red)}.syntax-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin-top:3vh}.syntax-item{padding:16px 12px;border-top:3px solid var(--blue);background:rgba(255,255,255,.48);min-width:0}.syntax-item b{display:block;font-size:14px;margin:7px 0}.syntax-item .example{font:700 clamp(16px,2vw,25px) var(--serif);line-height:1.15}.syntax-item p{font-size:11px;color:var(--muted);margin-top:10px}
+.tokens-line{font:700 clamp(20px,3.7vw,47px)/1.65 var(--serif);letter-spacing:-.035em;max-width:1000px;margin:2vh 0}.token{display:inline;border:0;border-bottom:2px dashed rgba(32,33,31,.28);background:transparent;padding:0 1px;cursor:pointer;font:inherit;color:inherit;line-height:1.3}.token:hover{color:var(--red)}.token.marked{background:var(--yellow);border-color:var(--yellow);color:var(--ink);border-radius:3px}.token.wrong{background:rgba(231,71,55,.15);border-color:var(--red);color:var(--red)}.quiz-bar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:15px}.action{border:0;background:var(--red);color:white;padding:12px 16px;cursor:pointer;font:10px var(--mono);letter-spacing:.08em;text-transform:uppercase;transition:transform .2s,background .2s}.action:hover{transform:translateY(-2px);background:var(--blue)}.dark .action,.red .action,.blue .action{background:var(--yellow);color:var(--ink)}.quiz-score{font:11px var(--mono);color:var(--red);min-height:22px}.dark .quiz-score,.red .quiz-score,.blue .quiz-score{color:var(--yellow)}
+.quiz-questions{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:3vh}.quiz-question{border:1px solid var(--line);background:rgba(255,255,255,.42);padding:16px}.quiz-question h3{font-size:clamp(15px,1.6vw,21px);margin-bottom:13px}.options{display:flex;flex-wrap:wrap;gap:7px}.option{border:1px solid var(--line);background:transparent;cursor:pointer;padding:9px 10px;font-size:12px;transition:.18s}.option:hover{border-color:var(--red)}.option.correct{background:var(--green);border-color:var(--green);color:white}.option.incorrect{background:var(--red);border-color:var(--red);color:white}.quiz-question .feedback{font:10px var(--mono);min-height:14px;margin-top:10px;color:var(--red)}
+.final-poster{display:grid;grid-template-columns:1fr .8fr;align-items:center;gap:3vw}.final-word{font:900 clamp(90px,18vw,245px)/.76 var(--display);letter-spacing:-.13em;color:var(--red);position:relative;z-index:1}.final-word:after{content:"";position:absolute;left:12%;top:46%;width:78%;height:5px;background:var(--blue);transform:rotate(-10deg);z-index:-1}.final-copy{font:700 clamp(20px,3vw,40px)/1.13 var(--serif);max-width:440px}.final-stamp{display:inline-block;margin-top:24px;background:var(--yellow);padding:12px 15px;font:10px var(--mono);letter-spacing:.07em;transform:rotate(2deg)}.source-list{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:3vh}.source{border-top:1px solid var(--line);padding-top:13px}.source b{display:block;font-size:15px;margin-bottom:5px}.source p{font-size:12px;color:var(--muted);line-height:1.45}.source a{color:var(--blue);overflow-wrap:anywhere}
+.footer{position:absolute;left:4vw;right:4vw;bottom:17px;display:flex;align-items:center;justify-content:space-between;gap:12px;z-index:22;font:10px var(--mono);letter-spacing:.09em;color:#706f68;text-transform:uppercase}.dark~.footer,.deck:has(.slide.dark.active) .footer,.deck:has(.slide.red.active) .footer,.deck:has(.slide.blue.active) .footer{color:rgba(244,239,229,.65)}.footer-left,.footer-mid,.footer-right{display:flex;align-items:center;gap:10px}.progress{width:min(21vw,250px);height:3px;background:rgba(32,33,31,.15);overflow:hidden}.progress span{display:block;height:100%;width:0;background:var(--red);transition:width .3s}.deck:has(.slide.dark.active) .progress,.deck:has(.slide.red.active) .progress,.deck:has(.slide.blue.active) .progress{background:rgba(255,255,255,.2)}.deck:has(.slide.dark.active) .progress span,.deck:has(.slide.red.active) .progress span,.deck:has(.slide.blue.active) .progress span{background:var(--yellow)}.nav{display:flex;gap:5px}.nav button{min-width:33px;height:30px;border:1px solid var(--line);background:rgba(244,239,229,.8);cursor:pointer;font:11px var(--mono);transition:.2s}.nav button:hover{background:var(--red);color:white;border-color:var(--red)}.deck:has(.slide.dark.active) .nav button,.deck:has(.slide.red.active) .nav button,.deck:has(.slide.blue.active) .nav button{background:rgba(32,33,31,.65);color:white;border-color:rgba(255,255,255,.3)}.deck:has(.slide.dark.active) .nav button:hover,.deck:has(.slide.red.active) .nav button:hover,.deck:has(.slide.blue.active) .nav button:hover{background:var(--yellow);color:var(--ink);border-color:var(--yellow)}.nav .mini{min-width:auto;padding:0 9px}.panel{position:absolute;z-index:35;right:4vw;bottom:61px;width:min(430px,92vw);max-height:70vh;overflow:auto;display:none;background:#fffaf1;color:var(--ink);border:1px solid rgba(32,33,31,.18);box-shadow:0 14px 55px rgba(32,33,31,.25);padding:22px}.panel.open{display:block;animation:rise .2s both}.panel h3{font:900 21px var(--display);letter-spacing:-.05em;margin-bottom:12px}.panel p{font-size:13px;line-height:1.6}.panel label{display:block;font:10px var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:14px 0 6px}.panel input{width:100%;padding:12px;border:1px solid var(--line);background:white;color:var(--ink)}.panel .action{margin-top:12px}.keyboard-grid{display:grid;grid-template-columns:auto 1fr;gap:8px 12px;margin-top:13px;font-size:13px}.keyboard-grid kbd{padding:4px 7px;border:1px solid var(--line);background:white;font:11px var(--mono);align-self:start}.advance{position:absolute;right:4vw;bottom:64px;z-index:21;display:none;align-items:center;gap:10px;padding:12px 14px;background:var(--blue);color:white;border:0;font:10px var(--mono);letter-spacing:.08em;text-transform:uppercase;cursor:pointer;box-shadow:5px 5px 0 rgba(32,33,31,.12)}.advance.visible{display:flex}.advance:hover{background:var(--red)}.sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:850px){.slide{padding:8vh 6vw 11vh}.topbar,.footer{left:5vw;right:5vw}.cover .content,.definition,.split,.final-poster{grid-template-columns:1fr}.cover-art{position:absolute;right:-10vw;top:20vh;width:52vw;min-height:270px;height:43vh;opacity:.42;z-index:-1}.cover-title{font-size:clamp(58px,12vw,100px);max-width:9em}.cover-title .block{font-size:.45em}.cover-deck{max-width:440px}.grid4{grid-template-columns:repeat(2,minmax(0,1fr))}.grid6{grid-template-columns:repeat(2,minmax(0,1fr))}.grid3{gap:8px}.card{padding:13px}.card .word{font-size:clamp(20px,4vw,34px);margin:1.2vh 0}.poster-words{position:absolute;right:-8vw;top:20vh;width:50vw;opacity:.22;z-index:-1}.syntax-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.case-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.footer{font-size:8px;gap:7px}.progress{width:14vw}.footer-left{display:none}.advance{right:5vw;bottom:59px}.gender-card{min-height:20vh}.final-word{font-size:clamp(80px,18vw,140px)}}
+@media(max-width:560px){.topbar{font-size:8px;top:13px}.topbar .topic{max-width:45%;text-align:right}.slide{padding:7.5vh 5vw 10.5vh}.slide:after{display:none}.grid2,.compare,.quiz-questions{grid-template-columns:1fr;gap:8px}.compare-panel{min-height:auto;padding:15px}.compare-panel .giant{font-size:clamp(28px,8vw,42px);margin:1vh 0}.grid3{grid-template-columns:1fr;gap:7px}.grid4,.grid6{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.card .word{font-size:clamp(19px,5vw,28px)}.card p{font-size:11px}.card .tag{font-size:8px}.definition-side{padding:20px}.definition-side .bigmark{font-size:60px}.steps{gap:8px}.step p{font-size:11px}.gender-cards{gap:7px}.gender-card{padding:11px;min-height:17vh}.gender-card .pronoun{font-size:20px}.gender-card .example{font-size:clamp(19px,5vw,30px)}.gender-card .detail{font-size:10px}.case-grid{gap:5px}.case-button{padding:10px 3px}.case-button strong{font-size:16px}.case-button small{font-size:8px}.number-stage{gap:7px;padding:15px}.number-stage .noun{font-size:clamp(24px,7vw,42px)}.number-stage .arrow{font-size:22px}.syntax-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:5px;margin-top:2vh}.syntax-item{padding:12px 10px}.declension-table th,.declension-table td{padding:8px 7px}.declension-table td:first-child{font-size:16px}.tokens-line{font-size:clamp(21px,5vw,29px)}.footer-mid{gap:6px}.progress{width:11vw}.nav button{min-width:27px;height:28px;padding:0 5px}.nav .mini{display:none}.panel{right:4vw;bottom:57px;padding:17px}.advance{bottom:57px;font-size:8px;padding:10px}.cover-art{right:-13vw;top:24vh;width:65vw}.cover-meta{font-size:8px;flex-wrap:wrap}.source-list{grid-template-columns:1fr;gap:10px}.final-poster{gap:2vh}.final-copy{font-size:24px}}
+@media(max-height:680px) and (min-width:851px){.slide{padding-top:7vh;padding-bottom:9vh}.cover-art{height:46vh;min-height:270px}.cover-title{font-size:clamp(50px,7vw,94px)}.card{padding:14px}.card .word{margin:1vh 0}.gender-card{min-height:19vh}.case-display{min-height:15vh}.footer{bottom:10px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+
+
+/* POLISH PASS: stronger contrast and compact merged learning blocks */
+.slide:not(.dark):not(.red):not(.blue) .muted,
+.slide:not(.dark):not(.red):not(.blue) .small,
+.slide:not(.dark):not(.red):not(.blue) .tiny,
+.slide:not(.dark):not(.red):not(.blue) .lead,
+.slide:not(.dark):not(.red):not(.blue) .card p,
+.slide:not(.dark):not(.red):not(.blue) .card .tag,
+.slide:not(.dark):not(.red):not(.blue) .gender-card .detail,
+.slide:not(.dark):not(.red):not(.blue) .case-button small,
+.slide:not(.dark):not(.red):not(.blue) .step p,
+.slide:not(.dark):not(.red):not(.blue) .syntax-item p,
+.slide:not(.dark):not(.red):not(.blue) .source p {
+  color:#42423c !important;
+  opacity:1 !important;
+}
+.slide:not(.dark):not(.red):not(.blue) .card {
+  background:rgba(255,255,255,.68);
+  border-color:rgba(32,33,31,.26);
+}
+.slide:not(.dark):not(.red):not(.blue) .card .reveal {
+  color:#b72d21 !important;
+}
+.slide:not(.dark):not(.red):not(.blue) .case-button small { color:#42423c !important; }
+.slide:not(.dark):not(.red):not(.blue) .declension-table td { color:#252622; }
+.consolidated-intro { margin:12px 0 0; max-width:900px; color:#42423c !important; }
+.merged-note { margin-top:14px; padding:10px 13px; font-size:clamp(11px,.95vw,13px); line-height:1.45; }
+.merged-note b { flex:0 0 65px; }
+.merged-note span { color:#33342f; }
+.merged-note strong { color:#b72d21; }
+.case-instruction { margin-top:9px; color:#42423c !important; }
+@media(max-width:760px){
+ .consolidated-intro { font-size:14px; line-height:1.42; }
+ .merged-note { margin-top:10px; }
+ .merged-note b { flex-basis:58px; }
+ .case-instruction { font-size:11px; }
+}
+
+
+/* REFINEMENT PASS: clearer information hierarchy and stronger interaction feedback */
+.identity-content { padding-top: 2px; }
+.identity-heading { font-size: clamp(38px, 6.1vw, 82px); max-width: 1050px; }
+.identity-compare { margin-top: clamp(18px, 2.6vh, 28px); }
+.identity-panel { min-height: 25vh; padding: clamp(18px, 2.6vw, 30px); }
+.identity-panel .giant { margin: 1.3vh 0; font-size: clamp(34px, 5.3vw, 72px); }
+.identity-panel.invert .tiny { color: rgba(255,255,255,.68); }
+.identity-foot { display: inline-block; margin-top: 16px; padding-top: 8px; border-top: 1px solid currentColor; font: 9px var(--mono); letter-spacing: .1em; }
+.identity-content .note-strip { margin-top: 16px; }
+.identity-content .note-strip span { font-size: clamp(11px, 1vw, 13px); }
+
+.question-content { width: min(100%, 1120px) !important; }
+.question-title { font-size: clamp(34px, 5.7vw, 76px); }
+.question-duo { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(12px, 2vw, 22px); margin-top: clamp(18px, 3vh, 30px); }
+.question-panel { min-width: 0; min-height: clamp(180px, 24vh, 230px); padding: clamp(17px, 2.3vw, 28px); display: flex; flex-direction: column; align-items: flex-start; justify-content: space-between; position: relative; overflow: hidden; color: var(--ink); }
+.who-panel { background: var(--paper2); box-shadow: 8px 8px 0 rgba(0,0,0,.14); }
+.what-panel { background: var(--yellow); box-shadow: 8px 8px 0 var(--red); }
+.question-kicker { font: 10px var(--mono); letter-spacing: .1em; opacity: .7; }
+.question-mark { font: 900 clamp(52px, 8vw, 100px)/.84 var(--display); letter-spacing: -.1em; margin: 14px 0 12px; }
+.question-examples { font: 700 clamp(14px, 1.55vw, 20px)/1.55 var(--sans); letter-spacing: -.025em; overflow-wrap: anywhere; }
+.question-examples i { font-style: normal; color: var(--red); }
+.question-caption { margin-top: 15px; font: 9px var(--mono); letter-spacing: .09em; opacity: .72; }
+.question-note { margin-top: 19px; }
+.question-note span { color: #fff !important; }
+.question-note b { min-width: 66px; }
+
+.passport-visual { position: relative; min-height: 330px; height: min(47vh, 420px); display: grid; place-items: center; isolation: isolate; margin-left: 2%; }
+.passport-disc { position: absolute; z-index: -1; width: min(79%, 370px); aspect-ratio: 1; border-radius: 50%; right: 8%; top: 4%; background: var(--yellow); box-shadow: 15px 16px 0 var(--red); transform: rotate(-7deg); }
+.passport-card { position: relative; width: min(77%, 330px); min-height: 225px; padding: clamp(19px, 2.3vw, 28px); background: var(--paper2); border: 1px solid var(--ink); box-shadow: 9px 9px 0 var(--ink); transform: rotate(-4deg); display: flex; flex-direction: column; justify-content: center; align-items: flex-start; }
+.passport-card-kicker, .passport-card-meta { font: 9px var(--mono); letter-spacing: .12em; }
+.passport-card-kicker { color: var(--red); }
+.passport-card strong { display: block; margin: 18px 0 15px; font: 900 clamp(43px, 6vw, 72px)/.82 var(--display); letter-spacing: -.1em; }
+.passport-card-rule { width: 100%; height: 3px; background: var(--red); }
+.passport-card-meta { margin-top: 12px; }
+.passport-orbit-label { position: absolute; z-index: 2; padding: 9px 12px; background: var(--blue); color: white; font: 9px var(--mono); letter-spacing: .08em; box-shadow: 4px 4px 0 rgba(32,33,31,.14); }
+.passport-label-top { top: 13%; left: 0; transform: rotate(-6deg); }
+.passport-label-bottom { right: 0; bottom: 16%; transform: rotate(5deg); background: var(--ink); color: var(--paper); }
+.passport-stamp { position: absolute; right: 3%; top: 9%; border: 1px solid var(--red); color: var(--red); padding: 8px 10px; font: 8px var(--mono); letter-spacing: .09em; transform: rotate(8deg); background: rgba(255,250,241,.88); }
+
+.morphology-content { width: min(100%, 1220px) !important; }
+.morphology-layout { display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1fr); gap: clamp(20px, 3.2vw, 42px); align-items: start; margin-top: 7px; }
+.morphology-left, .morphology-right { min-width: 0; }
+.analysis-title { font-size: clamp(30px, 4vw, 54px); line-height: .96; letter-spacing: -.075em; }
+.morphology-lead { margin-top: 14px; font-size: clamp(14px, 1.25vw, 18px); }
+.analysis-visual { position: relative; min-height: 225px; height: clamp(225px, 29vh, 285px); display: grid; place-items: center; isolation: isolate; margin-top: 8px; overflow: visible; }
+.analysis-disc { position: absolute; z-index: -1; width: min(74%, 270px); aspect-ratio: 1; border-radius: 50%; right: 12%; top: 1%; background: var(--yellow); box-shadow: 13px 14px 0 var(--red); transform: rotate(8deg); }
+.analysis-word-card { width: min(74%, 280px); min-height: 165px; padding: 20px; background: var(--paper2); border: 1px solid var(--ink); box-shadow: 8px 8px 0 var(--ink); transform: rotate(-4deg); display: flex; flex-direction: column; justify-content: center; align-items: flex-start; }
+.analysis-card-kicker, .analysis-card-foot { font: 9px var(--mono); letter-spacing: .11em; }
+.analysis-card-kicker { color: var(--red); }
+.analysis-word-card strong { font: 900 clamp(42px, 5.5vw, 66px)/.9 var(--display); letter-spacing: -.09em; margin: 12px 0; }
+.analysis-card-rule { width: 100%; height: 3px; background: var(--blue); }
+.analysis-card-foot { margin-top: 10px; }
+.analysis-chip, .analysis-stamp { position: absolute; padding: 8px 10px; font: 9px var(--mono); letter-spacing: .08em; box-shadow: 4px 4px 0 rgba(32,33,31,.13); }
+.analysis-chip { bottom: 8%; left: 0; background: var(--blue); color: white; transform: rotate(-5deg); }
+.analysis-stamp { top: 2%; right: 0; background: var(--red); color: white; transform: rotate(7deg); }
+.analysis-table-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 2px 0 0; }
+.analysis-count { font: 9px var(--mono); letter-spacing: .08em; color: var(--red); white-space: nowrap; }
+.analysis-table { margin-top: 8px; font-size: clamp(11px, .98vw, 14px); background: rgba(255,255,255,.55); }
+.analysis-table td { padding: 9px 10px; }
+.analysis-table td:first-child { width: 43%; font: 800 clamp(12px, 1.05vw, 14px) var(--sans); letter-spacing: -.025em; }
+.analysis-table td:last-child { overflow-wrap: anywhere; }
+
+/* Slide 15: selected words visibly change colour; a fully correct answer gets a celebratory burst. */
+#nounQuiz { margin-top: 1.5vh; line-height: 1.6; }
+#nounQuiz .token { border: 0; border-bottom: 3px solid rgba(32,33,31,.34); border-radius: 4px; padding: .035em .1em .08em; margin: 0 .025em; transition: background .18s, color .18s, transform .18s, box-shadow .18s; }
+#nounQuiz .token:hover { color: var(--red); background: rgba(255,255,255,.45); }
+#nounQuiz .token.marked { background: var(--blue); border-color: var(--blue); color: #fff; transform: translateY(-2px); box-shadow: 0 4px 0 rgba(32,33,31,.16); }
+#nounQuiz .token.wrong { background: var(--red); border-color: #b72d21; color: #fff; animation: answer-nudge .24s ease-in-out 2; }
+#nounQuiz .token.is-correct { background: var(--green); border-color: var(--green); color: #fff; }
+#quizScore { display: inline-flex; align-items: center; min-height: 34px; padding: 6px 10px; border: 1px solid rgba(32,33,31,.18); background: rgba(255,255,255,.45); }
+#quizScore.success { color: #fff; border-color: var(--green); background: var(--green); animation: score-pop .45s cubic-bezier(.2,.8,.2,1); }
+.quiz-bar .pill { border-color: rgba(32,33,31,.32); }
+
+/* Slide 16: clearer answer states and a useful final score. */
+#rapidQuiz { margin-top: 2.4vh; }
+#rapidQuiz .quiz-question { border: 1px solid rgba(255,255,255,.28); background: rgba(255,255,255,.07); padding: clamp(14px, 1.5vw, 20px); transition: border-color .2s, background .2s, transform .2s; }
+#rapidQuiz .quiz-question.solved { border-color: var(--yellow); background: rgba(240,220,87,.09); }
+#rapidQuiz .quiz-question h3 { min-height: 2.1em; font-size: clamp(15px, 1.45vw, 20px); }
+#rapidQuiz .option { border-color: rgba(255,255,255,.34); border-radius: 2px; min-height: 38px; padding: 9px 12px; color: var(--paper); background: rgba(32,33,31,.22); }
+#rapidQuiz .option:hover { border-color: var(--yellow); background: rgba(240,220,87,.12); }
+#rapidQuiz .option.correct { color: var(--ink); background: var(--yellow); border-color: var(--yellow); box-shadow: 0 3px 0 rgba(0,0,0,.16); }
+#rapidQuiz .option.incorrect { color: #fff; background: var(--red); border-color: #ff796d; animation: answer-nudge .24s ease-in-out 2; }
+#rapidQuiz .option.answer-key { color: var(--ink); background: #a9e0bb; border-color: #a9e0bb; }
+#rapidQuiz .option.correct::after { content: "  ✓"; font-weight: 900; }
+#rapidQuiz .option.answer-key::after { content: "  ✓"; font-weight: 900; }
+#rapidQuiz .quiz-question .feedback { min-height: 28px; margin-top: 12px; color: #fff; line-height: 1.45; }
+#rapidQuiz .quiz-question.solved .feedback { color: var(--yellow); }
+#rapidScore { display: inline-flex; align-items: center; padding: 7px 10px; min-height: 30px; border: 1px solid rgba(255,255,255,.25); background: rgba(32,33,31,.2); }
+#rapidScore.success { background: var(--yellow); color: var(--ink); border-color: var(--yellow); animation: score-pop .45s cubic-bezier(.2,.8,.2,1); }
+#resetRapid { color: var(--paper); }
+#resetRapid:hover, #resetRapid.selected { color: var(--ink); }
+
+.celebration-layer { position: absolute; inset: 0; z-index: 12; pointer-events: none; overflow: hidden; }
+.confetti-bit { position: absolute; top: -8%; left: var(--x); width: var(--w); height: var(--h); border-radius: 2px; background: var(--c); transform: rotate(var(--r)); opacity: 0; animation: confetti-fall 1.55s var(--delay) cubic-bezier(.15,.65,.32,1) forwards; }
+@keyframes confetti-fall { 0% { opacity: 0; transform: translate3d(0,0,0) rotate(var(--r)) scale(.5); } 10% { opacity: 1; } 100% { opacity: 0; transform: translate3d(var(--drift), 90vh, 0) rotate(calc(var(--r) + 560deg)) scale(1); } }
+@keyframes score-pop { 0% { transform: scale(.96); } 60% { transform: scale(1.06); } 100% { transform: scale(1); } }
+@keyframes answer-nudge { 0%,100% { transform: translateX(0); } 35% { transform: translateX(-2px); } 70% { transform: translateX(2px); } }
+@media(max-width:850px) {
+  .passport-visual { position: relative; right: auto; top: auto; width: 100%; min-height: 290px; height: 34vh; opacity: 1; margin: 0; }
+  .passport-disc { width: min(73%, 320px); right: 10%; }
+  .passport-card { width: min(72%, 300px); }
+  .passport-label-top { left: 1%; }
+  .passport-label-bottom { right: 1%; }
+  .morphology-layout { grid-template-columns: minmax(0, .92fr) minmax(0, 1fr); gap: 18px; }
+  .analysis-title { font-size: clamp(27px, 4.1vw, 42px); }
+  .analysis-visual { height: 230px; min-height: 220px; }
+  .analysis-word-card { width: min(80%, 250px); padding: 16px; }
+  .analysis-word-card strong { font-size: clamp(38px, 5vw, 52px); }
+  .analysis-table td { padding: 8px 7px; }
+}
+@media(max-width:650px) {
+  .identity-heading { font-size: clamp(35px, 8vw, 56px); }
+  .identity-compare { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .identity-panel { padding: 14px; min-height: 0; }
+  .identity-panel .giant { font-size: clamp(27px, 7vw, 40px); }
+  .identity-panel p { font-size: 11px; }
+  .identity-foot { font-size: 8px; margin-top: 10px; }
+  .question-title { font-size: clamp(31px, 7.3vw, 48px); }
+  .question-duo { gap: 9px; }
+  .question-panel { min-height: 190px; padding: 14px; }
+  .question-mark { font-size: clamp(43px, 11vw, 64px); }
+  .question-examples { font-size: 13px; }
+  .question-caption { font-size: 7px; letter-spacing: .045em; }
+  .question-note { margin-top: 13px; }
+  .question-note span { font-size: 11px; }
+  .morphology-layout { grid-template-columns: 1fr; gap: 12px; }
+  .morphology-left { display: grid; grid-template-columns: minmax(0, 1fr); }
+  .analysis-title { font-size: clamp(30px, 7vw, 44px); }
+  .morphology-lead { margin-top: 9px; }
+  .analysis-visual { min-height: 205px; height: 205px; margin-top: 0; }
+  .analysis-disc { width: min(58%, 220px); right: 20%; }
+  .analysis-word-card { width: min(64%, 240px); min-height: 145px; }
+  .analysis-word-card strong { font-size: clamp(38px, 10vw, 52px); }
+  .analysis-table-head { margin-top: 0; }
+  .analysis-table { margin-top: 5px; }
+  .analysis-table td { padding: 7px 8px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .confetti-bit { animation: none !important; display: none !important; }
+}
+
+
+@media(max-width:560px) {
+  .rapid-quiz-slide { justify-content: flex-start; padding-top: 74px; padding-bottom: 66px; }
+  .rapid-quiz-slide > .content { margin: 0 auto; }
+  .rapid-quiz-slide h2 { font-size: clamp(30px, 7.8vw, 42px); line-height: .94; margin-bottom: 6px; }
+  .rapid-quiz-slide .quiz-questions { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-top: 14px; }
+  .rapid-quiz-slide #rapidQuiz .quiz-question { padding: 10px 9px; min-width: 0; }
+  .rapid-quiz-slide #rapidQuiz .quiz-question h3 { font-size: 12px; line-height: 1.18; min-height: 3em; margin-bottom: 9px; overflow-wrap: anywhere; }
+  .rapid-quiz-slide #rapidQuiz .options { gap: 4px; }
+  .rapid-quiz-slide #rapidQuiz .option { font-size: 10px; line-height: 1.2; padding: 7px 6px; min-height: 30px; }
+  .rapid-quiz-slide #rapidQuiz .quiz-question .feedback { min-height: 31px; font-size: 9px; margin-top: 8px; line-height: 1.3; }
+  .rapid-quiz-slide .quiz-bar { margin-top: 10px; }
+  .rapid-quiz-slide #rapidScore { font-size: 9px; }
+}
+
+
+
+/* ART DIRECTION — «Печатная мастерская»: ink, paper, proofs and imperfect registration */
+:root {
+  --paper: #f1ecdf;
+  --paper2: #fff9eb;
+  --ink: #1d1e1b;
+  --muted: #5e5c54;
+  --red: #ef4334;
+  --blue: #2d43d0;
+  --yellow: #f3df51;
+  --green: #27734f;
+  --line: rgba(29,30,27,.24);
+  --mono: "Courier New", monospace;
+  --display: "Arial Black", Impact, Haettenschweiler, sans-serif;
+}
+html { background: var(--paper); }
+body { background: var(--paper); }
+.deck { background: var(--paper); }
+.deck:before {
+  background:
+    radial-gradient(ellipse at var(--mx) var(--my), rgba(239,67,52,.055), transparent 42%),
+    repeating-linear-gradient(0deg, transparent 0 95px, rgba(29,30,27,.026) 96px 97px),
+    repeating-linear-gradient(90deg, transparent 0 119px, rgba(29,30,27,.018) 120px 121px);
+}
+.topbar {
+  left: 7.6vw; right: 7.6vw; top: 17px; padding-bottom: 8px;
+  border-bottom: 1px solid rgba(244,239,229,.24);
+  font-size: 9px; letter-spacing: .15em;
+}
+.brand { gap: 11px; letter-spacing: .12em; }
+.brand-mark { width: 24px; height: 24px; transform: rotate(-9deg); box-shadow: 3px 3px 0 rgba(239,67,52,.24); }
+.topic { opacity: .75; }
+.footer { left: 4.4vw; right: 4.4vw; bottom: 14px; font-size: 9px; }
+.progress { height: 2px; }
+.nav button { border-radius: 0; }
+.slide { background-image: linear-gradient(90deg, rgba(29,30,27,.025) 1px, transparent 1px); background-size: 120px 100%; }
+.slide:before {
+  content: ""; position: absolute; left: 4vw; top: 7.25vh; width: 17px; height: 17px;
+  border-top: 1px solid var(--red); border-left: 1px solid var(--red);
+  opacity: .72; pointer-events: none;
+}
+.slide.dark:before, .slide.red:before, .slide.blue:before { border-color: var(--yellow); }
+.slide:after {
+  right: 2.8vw; top: 23%; padding: 7px 0 7px 7px;
+  border-left: 1px solid currentColor; font-size: 8px; letter-spacing: .24em;
+  opacity: .36;
+}
+h1, h2 { letter-spacing: -.075em; }
+.eyebrow { gap: 11px; margin-bottom: clamp(15px,2.5vh,27px); letter-spacing: .19em; font-size: 9px; }
+.eyebrow:before { content: "✳"; display: inline-grid; place-items:center; width: 21px; height: 21px; font-size: 14px; border: 1px solid currentColor; border-radius: 50%; }
+em { color: var(--red); }
+.lead { max-width: 690px; }
+.note-strip { background: transparent; border-left-width: 2px; border-left-style: solid; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.note-strip b { font-size: 9px; letter-spacing: .13em; }
+
+/* Cover: not an orbital template — a large printed specimen with off-register ink. */
+.cover { background: #20211e; }
+.cover:before {
+  width: 46vw; right: -6vw; top: 6vh; border-radius: 0; aspect-ratio: .86;
+  border: 1px solid rgba(244,239,229,.23); transform: rotate(8deg);
+  box-shadow: 16px 16px 0 rgba(239,67,52,.10), 30px 30px 0 rgba(45,67,208,.11);
+}
+.cover .content { grid-template-columns: 1.14fr .86fr; gap: 3vw; }
+.cover-title { font-size: clamp(58px,9.4vw,138px); line-height: .74; letter-spacing: -.105em; }
+.cover-title .serif { display:block; color: var(--paper); transform: translateX(-.03em); }
+.cover-title .block { margin-top: .38em; max-width: 6.8em; font-size: .42em; line-height: .95; color: var(--yellow); letter-spacing: -.065em; }
+.cover-deck { border-left: 3px solid var(--red); padding-left: 15px; }
+.cover-meta { border-top: 1px solid rgba(244,239,229,.45); max-width: 570px; }
+.cover-art { min-height: 420px; }
+.cover-orbit {
+  width: min(33vw, 415px); border-radius: 48% 52% 43% 57% / 57% 42% 58% 43%;
+  border: 1px solid rgba(244,239,229,.54); transform: rotate(-8deg);
+  animation: cover-wobble 13s ease-in-out infinite;
+}
+.cover-orbit:before { inset: 9% 16%; border-style: solid; border-color: rgba(244,239,229,.30); transform: rotate(17deg); }
+.cover-orbit:after { inset: 22% 28%; border: 2px solid rgba(239,67,52,.8); transform: rotate(-22deg); }
+.orbit-core { border-radius: 0; width: 61%; transform: rotate(-9deg); box-shadow: 11px 11px 0 var(--red); clip-path: polygon(4% 0, 100% 9%, 93% 100%, 0 89%); }
+.orbit-word { border: 1px solid var(--ink); box-shadow: 3px 3px 0 rgba(0,0,0,.28); }
+.cover-sticker { transform: rotate(4deg); right: -1%; top: 8%; }
+@keyframes cover-wobble { 0%,100% { transform: rotate(-8deg) translateY(0); } 50% { transform: rotate(-4deg) translateY(-5px); } }
+
+/* Slide 02 — four clues laid out like loose specimens on a red worktable. */
+.mystery-slide .grid4 { gap: clamp(10px,1.4vw,17px); align-items: stretch; }
+.mystery-slide .card {
+  background: var(--paper2); color: var(--ink); border: 0; border-top: 3px solid var(--ink);
+  box-shadow: 5px 6px 0 rgba(29,30,27,.17); padding: clamp(14px,1.7vw,22px);
+}
+.mystery-slide .card:nth-child(1) { transform: rotate(-.7deg) translateY(4px); }
+.mystery-slide .card:nth-child(2) { transform: rotate(.5deg) translateY(-3px); }
+.mystery-slide .card:nth-child(3) { transform: rotate(-.3deg) translateY(6px); }
+.mystery-slide .card:nth-child(4) { transform: rotate(.7deg) translateY(-1px); }
+.mystery-slide .card:before { content: "A"; position:absolute; right:12px; top:8px; font: italic 700 16px Georgia,serif; color: var(--red); }
+.mystery-slide .card:nth-child(2):before { content:"B"; }
+.mystery-slide .card:nth-child(3):before { content:"C"; }
+.mystery-slide .card:nth-child(4):before { content:"D"; }
+.mystery-slide .card .tag { color: var(--red) !important; }
+.mystery-slide .card p { color: #42423c !important; }
+.mystery-slide .card .word { font-size: clamp(25px,3.5vw,47px); }
+.mystery-slide .card:hover { transform: translateY(-4px) rotate(0); }
+.mystery-slide .card.revealed { background: var(--yellow); }
+.mystery-slide .card .reveal { color: var(--blue) !important; }
+
+/* Slide 04 — a taxonomy, not a catalogue of six identical cards. */
+.taxonomy-slide .content { max-width: 1240px; }
+.taxonomy-slide h2 { position: relative; z-index: 1; }
+.taxonomy-slide .consolidated-intro { max-width: 780px; border-left: 2px solid var(--red); padding-left: 13px; margin-top: 14px; }
+.taxonomy-slide .grid6 { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 8px 24px; margin-top: clamp(16px,2.3vh,24px); }
+.taxonomy-slide .grid6 .card {
+  background: transparent !important; box-shadow: none; border: 0; border-top: 1px solid var(--ink);
+  padding: 12px 13px 13px 14px; overflow: visible; transform: none; min-height: 150px;
+}
+.taxonomy-slide .grid6 .card:after { content: ""; position:absolute; left:0; top:-2px; height:4px; width:34px; background: var(--red); }
+.taxonomy-slide .grid6 .card:nth-child(2):after, .taxonomy-slide .grid6 .card:nth-child(5):after { background: var(--blue); }
+.taxonomy-slide .grid6 .card:nth-child(3):after, .taxonomy-slide .grid6 .card:nth-child(6):after { background: var(--yellow); }
+.specimen-icon { display:block; width:38px; height:38px; margin:1px 0 8px; fill:none; stroke:var(--ink); stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; }
+.taxonomy-slide .grid6 .card:nth-child(2) .specimen-icon, .taxonomy-slide .grid6 .card:nth-child(5) .specimen-icon { stroke:var(--blue); }
+.taxonomy-slide .grid6 .card:nth-child(3) .specimen-icon, .taxonomy-slide .grid6 .card:nth-child(6) .specimen-icon { stroke:var(--red); }
+.taxonomy-slide .grid6 .card .tag { color: var(--red) !important; font-size: 9px; }
+.taxonomy-slide .grid6 .card .word { font-size: clamp(25px,3.2vw,40px); margin: 0 0 7px; }
+.taxonomy-slide .grid6 .card p { max-width: 235px; }
+
+/* Slide 05 — the unique name gets a one-off print; the common noun becomes a repeatable type. */
+.identity-content { isolation:isolate; }
+.identity-content:before { content:"01"; position:absolute; z-index:-1; right:0; top:-11%; font:900 clamp(180px,28vw,370px)/.8 var(--display); color:rgba(29,30,27,.06); letter-spacing:-.13em; }
+.identity-heading { font-size:clamp(40px,6.4vw,86px); max-width:1050px; }
+.identity-compare { gap: clamp(14px,2vw,24px); margin-top: clamp(17px,2.4vh,25px); }
+.identity-panel { position:relative; overflow:hidden; border:0; padding:clamp(20px,2.7vw,32px); min-height:25vh; }
+.identity-panel:first-child { background:var(--ink); color:var(--paper); transform:rotate(-.6deg); box-shadow:10px 10px 0 var(--red); }
+.identity-panel:last-child { background:var(--paper2); color:var(--ink); border:1px dashed rgba(29,30,27,.55); transform:rotate(.5deg); box-shadow:7px 7px 0 rgba(29,30,27,.12); }
+.identity-panel:before { position:absolute; right:11px; bottom:-30px; font:900 145px/.8 var(--display); letter-spacing:-.12em; opacity:.12; pointer-events:none; }
+.identity-panel:first-child:before { content:"★"; color:var(--yellow); }
+.identity-panel:last-child:before { content:"∞"; color:var(--blue); font-size:180px; }
+.identity-panel .giant { position:relative; z-index:1; font-size:clamp(38px,5.4vw,76px); letter-spacing:-.09em; }
+.identity-panel:last-child .giant { color:var(--blue); }
+.identity-panel p { max-width:390px; position:relative; z-index:1; }
+.identity-panel .identity-foot { position:relative; z-index:1; }
+.identity-content .note-strip { background:transparent; border-top:1px solid var(--ink); border-bottom:1px solid var(--ink); }
+
+/* Slide 06 — the two questions are two different visual voices. */
+.question-duo { position:relative; gap:clamp(16px,2.4vw,28px); }
+.question-panel { border:0; min-height:clamp(190px,25vh,245px); }
+.who-panel { transform:rotate(-.5deg); box-shadow:8px 8px 0 var(--red); outline:1px solid var(--ink); outline-offset:-7px; }
+.what-panel { transform:rotate(.6deg); box-shadow:8px 8px 0 var(--ink); }
+.question-panel:after { content:"?"; position:absolute; right:7px; top:-31px; font:900 180px/.9 var(--display); opacity:.07; pointer-events:none; }
+.who-panel:after { color:var(--blue); }
+.what-panel:after { color:var(--red); }
+.question-mark { position:relative; z-index:1; font-size:clamp(56px,8.7vw,111px); letter-spacing:-.13em; }
+.question-examples { position:relative; z-index:1; max-width:520px; }
+.question-note { border-color:var(--yellow); }
+
+/* Slide 07 — a connected process, like a designer's workflow drawn on paper. */
+.system-slide .steps { position:relative; gap:clamp(18px,3vw,42px); margin-top:4vh; }
+.system-slide .steps:before { content:""; position:absolute; left:8%; right:8%; top:31px; border-top:1px dashed rgba(243,223,81,.55); }
+.system-slide .step { position:relative; z-index:1; padding:12px 14px 15px; border:1px solid rgba(243,223,81,.28); background:rgba(255,255,255,.035); min-height:155px; }
+.system-slide .step .num { display:inline-grid; place-items:center; width:53px; height:53px; background:var(--yellow); color:var(--ink); border-radius:50%; font-size:32px; box-shadow:4px 4px 0 var(--red); }
+.system-slide .step b { margin-top:17px; }
+.system-slide .note-strip { margin-top:18px; }
+
+/* Slide 08 — three specimen tabs, each with a different register colour. */
+.gender-slide .gender-cards { gap:18px; align-items:stretch; }
+.gender-slide .gender-card { position:relative; min-height:24vh; border:0; border-top:2px solid var(--ink); background:rgba(255,255,255,.23); padding:clamp(17px,2vw,25px); overflow:hidden; }
+.gender-slide .gender-card:before { content:""; position:absolute; right:-17px; top:47px; width:92px; height:92px; border:1px solid var(--red); border-radius:50%; transform:rotate(-17deg); opacity:.32; }
+.gender-slide .gender-card:nth-child(2):before { border-color:var(--blue); width:78px; height:102px; border-radius:4px; transform:rotate(13deg); }
+.gender-slide .gender-card:nth-child(3):before { border-color:var(--green); border-radius:0; transform:rotate(45deg); }
+.gender-slide .gender-card .pronoun { position:relative; z-index:1; font-size:clamp(22px,3.1vw,44px); }
+.gender-slide .gender-card .example { position:relative; z-index:1; margin:4vh 0 1vh; font-size:clamp(29px,4.4vw,61px); }
+.gender-slide .gender-card.selected { background:var(--yellow); box-shadow:7px 7px 0 var(--red); transform:rotate(-.5deg) translateY(-3px); }
+.gender-slide .note-strip { border-left:2px solid var(--blue); }
+
+/* Slide 09 — count turns into scale: the numeral is a background graphic, not a card. */
+.number-slide .number-toggle { gap:0; border-bottom:1px solid var(--ink); width:max-content; }
+.number-slide .pill { border:0; border-right:1px solid var(--line); }
+.number-slide .pill.selected { background:var(--ink); color:var(--yellow); }
+.number-slide .number-stage { position:relative; isolation:isolate; border:0; border-top:1px solid var(--ink); border-bottom:3px solid var(--red); background:transparent; padding:clamp(26px,4vw,48px) clamp(14px,2vw,25px); gap:clamp(10px,2vw,28px); }
+.number-slide .number-stage:before { content:"01 → ∞"; position:absolute; z-index:-1; right:1%; bottom:-22%; font:900 clamp(70px,14vw,180px)/.8 var(--display); letter-spacing:-.14em; color:rgba(29,30,27,.065); white-space:nowrap; }
+.number-slide .number-stage .noun { position:relative; font-size:clamp(36px,7vw,98px); }
+.number-slide .number-stage .noun.active { color:var(--red); text-shadow:3px 3px 0 rgba(239,67,52,.13); }
+.number-slide .number-stage .arrow { font-size:clamp(25px,4vw,50px); transform:rotate(-7deg); }
+
+/* Slide 10 — a word passport that looks like a real proof card from a print shop. */
+.initial-form-slide .passport-visual { min-height:350px; }
+.initial-form-slide .passport-disc { width:min(79%,360px); border-radius:41% 59% 46% 54% / 53% 41% 59% 47%; box-shadow:13px 13px 0 var(--red); }
+.initial-form-slide .passport-card { border:1px solid var(--ink); border-left:7px solid var(--red); box-shadow:8px 8px 0 var(--ink); transform:rotate(-2.3deg); background:linear-gradient(90deg,rgba(45,67,208,.06) 0 28px,transparent 28px),var(--paper2); }
+.initial-form-slide .passport-card:before { content:"И"; position:absolute; top:15px; right:16px; display:grid; place-items:center; width:32px; height:32px; border:1px solid var(--red); color:var(--red); font:900 21px var(--display); transform:rotate(8deg); }
+.initial-form-slide .passport-card strong { letter-spacing:-.13em; }
+.initial-form-slide .passport-card-rule { height:2px; background:repeating-linear-gradient(90deg,var(--blue) 0 5px,transparent 5px 8px); }
+.initial-form-slide .passport-stamp { border:2px double var(--red); border-radius:50%; font-weight:bold; transform:rotate(11deg); }
+.initial-form-slide .steps .step { padding-right:15px; }
+.initial-form-slide .steps .step:first-child b { text-decoration:line-through; text-decoration-color:var(--red); text-decoration-thickness:2px; }
+
+/* Slide 11 — six case labels become a typesetting drawer. */
+.case-slide .case-grid { gap:5px; }
+.case-slide .case-button { border:0; border-top:2px solid var(--ink); background:transparent; padding:16px 8px 13px; position:relative; }
+.case-slide .case-button:after { content:""; position:absolute; top:-2px; left:0; height:4px; width:0; background:var(--red); transition:width .25s; }
+.case-slide .case-button.active { background:var(--yellow); color:var(--ink); border-color:var(--ink); }
+.case-slide .case-button.active:after { width:100%; }
+.case-slide .case-button.active small { color:var(--ink); }
+.case-slide .case-display { border-left:8px solid var(--red); background:var(--ink); box-shadow:8px 8px 0 rgba(29,30,27,.12); }
+.case-slide .case-display .sentence { font-size:clamp(26px,4vw,56px); }
+.case-slide .case-display .sentence span { color:var(--yellow); text-decoration:underline; text-decoration-color:var(--red); text-decoration-thickness:3px; text-underline-offset:6px; }
+
+/* Slide 12 — the table gets the rhythm of a printed index, not spreadsheet rows. */
+.declension-slide .declension-table { border-collapse:separate; border-spacing:0 5px; background:transparent; }
+.declension-slide .declension-table thead { background:var(--ink); color:var(--paper); }
+.declension-slide .declension-table th { color:var(--yellow); padding-top:12px; padding-bottom:12px; }
+.declension-slide .declension-table tbody tr { background:rgba(255,255,255,.53); }
+.declension-slide .declension-table tbody td { border-bottom:0; }
+.declension-slide .declension-table td:first-child { font-size:clamp(22px,3vw,38px); color:var(--red); }
+.declension-slide .declension-table tbody tr:nth-child(2) td:first-child { color:var(--blue); }
+.declension-slide .declension-table tbody tr:nth-child(3) td:first-child { color:var(--green); }
+.declension-slide .note-strip { margin-top:14px; }
+
+/* Slide 13 — process notes, arrows and a strong underlined answer. */
+.algorithm-slide .steps { gap:clamp(12px,2.5vw,30px); }
+.algorithm-slide .step { border-top:1px dashed var(--blue); padding-top:17px; }
+.algorithm-slide .step .num { color:var(--red); font-size:clamp(50px,6vw,80px); }
+.algorithm-slide .formula { display:inline-block; max-width:100%; transform:rotate(-1deg); background:var(--yellow); box-shadow:6px 6px 0 var(--red); }
+
+/* Slide 14 — syntactic jobs are not identical cards; each gets its own marker and offset. */
+.syntax-slide .syntax-grid { gap:12px; align-items:start; }
+.syntax-slide .syntax-item { position:relative; border:0; border-top:2px solid var(--red); padding:18px 11px 16px; background:transparent; overflow:visible; }
+.syntax-slide .syntax-item:nth-child(2) { border-color:var(--blue); transform:translateY(17px); }
+.syntax-slide .syntax-item:nth-child(3) { border-color:var(--green); }
+.syntax-slide .syntax-item:nth-child(4) { border-color:var(--red); transform:translateY(24px); }
+.syntax-slide .syntax-item:nth-child(5) { border-color:var(--blue); }
+.syntax-slide .syntax-item:nth-child(1):before { content:"01"; }
+.syntax-slide .syntax-item:nth-child(2):before { content:"02"; }
+.syntax-slide .syntax-item:nth-child(3):before { content:"03"; }
+.syntax-slide .syntax-item:nth-child(4):before { content:"04"; }
+.syntax-slide .syntax-item:nth-child(5):before { content:"05"; }
+.syntax-slide .syntax-item:before { position:absolute; right:0; top:-12px; color:rgba(29,30,27,.10); font:900 49px/.9 var(--display); letter-spacing:-.1em; }
+.syntax-slide .syntax-item b { position:relative; z-index:1; color:var(--red); font-size:15px; }
+.syntax-slide .syntax-item:nth-child(2) b, .syntax-slide .syntax-item:nth-child(5) b { color:var(--blue); }
+.syntax-slide .syntax-item .example { min-height:2.3em; font-size:clamp(16px,1.8vw,24px); }
+.syntax-slide .note-strip { margin-top:35px; }
+
+/* Slide 15 — analytical drawing and proof table. */
+.morphology-slide .analysis-disc { width:min(70%,280px); border-radius:42% 58% 55% 45% / 48% 44% 56% 52%; transform:rotate(-8deg); }
+.morphology-slide .analysis-word-card { transform:rotate(-2.2deg); box-shadow:7px 7px 0 var(--blue); border-top:5px solid var(--red); }
+.morphology-slide .analysis-card-foot { letter-spacing:.14em; }
+.morphology-slide .analysis-table { border-collapse:separate; border-spacing:0 2px; background:transparent; }
+.morphology-slide .analysis-table tbody tr { background:rgba(255,255,255,.63); }
+.morphology-slide .analysis-table td { border-bottom:0; }
+.morphology-slide .analysis-table td:first-child { color:var(--red); }
+.morphology-slide .analysis-count { border:1px solid var(--red); padding:6px 8px; transform:rotate(2deg); }
+
+/* Slide 16 — sentence as a line of type that can be marked up by the audience. */
+.noun-practice-slide .content { max-width:1160px; }
+.noun-practice-slide h2 { max-width:900px; }
+.noun-practice-slide h2 em { display:inline-block; }
+.noun-practice-slide .lead { border-left:2px solid var(--ink); padding-left:13px; margin-top:18px !important; }
+#nounQuiz { max-width:1040px; margin-top:clamp(18px,3vh,34px); padding:14px 0 18px; border-top:1px solid var(--ink); border-bottom:1px solid var(--ink); font:700 clamp(27px,4.4vw,59px)/1.7 var(--serif); letter-spacing:-.04em; }
+#nounQuiz .token { border:0; border-bottom:2px dashed rgba(29,30,27,.45); padding:0 .07em .04em; margin:0 .02em; transition:color .18s,background .18s,transform .18s,box-shadow .18s; }
+#nounQuiz .token:hover { color:var(--red); border-bottom-style:solid; }
+#nounQuiz .token.marked { background:var(--blue); border-bottom:3px solid var(--yellow); color:#fff; border-radius:0; transform:rotate(-1deg) translateY(-2px); box-shadow:4px 4px 0 rgba(29,30,27,.16); }
+#nounQuiz .token.wrong { background:var(--red); border-color:#9e2118; color:#fff; animation:answer-nudge .24s ease-in-out 2; }
+#nounQuiz .token.is-correct { background:var(--green); border-bottom:3px solid var(--yellow); color:#fff; }
+#quizScore { border:0; border-left:3px solid var(--red); background:rgba(255,255,255,.5); }
+#quizScore.success { border-left-color:var(--yellow); background:var(--green); }
+.noun-practice-slide.quiz-perfect:after { content:"✓"; top:18%; right:8%; writing-mode:horizontal-tb; font:900 clamp(70px,14vw,170px)/1 var(--display); color:var(--green); opacity:.12; border:0; transform:rotate(12deg); }
+
+/* Slide 17 — an answer sheet with question numbers in the margins. */
+.rapid-quiz-slide .quiz-questions { gap:10px 15px; }
+#rapidQuiz .quiz-question { position:relative; overflow:hidden; border:0; border-top:1px solid rgba(255,255,255,.65); background:rgba(255,255,255,.045); padding:clamp(15px,1.9vw,24px); }
+#rapidQuiz .quiz-question:before { content:attr(data-q); position:absolute; right:8px; top:-12px; font:900 clamp(70px,8vw,110px)/1 var(--display); letter-spacing:-.1em; color:rgba(255,255,255,.07); pointer-events:none; }
+#rapidQuiz .quiz-question:nth-child(2) { border-top:3px solid var(--yellow); transform:rotate(.25deg); }
+#rapidQuiz .quiz-question:nth-child(3) { border-top:3px solid var(--red); transform:rotate(-.25deg); }
+#rapidQuiz .quiz-question:nth-child(4) { border-top:3px solid rgba(255,255,255,.7); }
+#rapidQuiz .quiz-question h3 { position:relative; z-index:1; max-width:92%; }
+#rapidQuiz .options, #rapidQuiz .feedback { position:relative; z-index:1; }
+#rapidQuiz .option { border-radius:0; }
+#rapidQuiz .quiz-question.solved { background:rgba(243,223,81,.11); }
+.rapid-quiz-slide.quiz-perfect:after { content:"4/4"; writing-mode:horizontal-tb; top:13%; right:7%; color:var(--yellow); font:900 clamp(60px,11vw,130px)/1 var(--display); opacity:.12; border:0; transform:rotate(-8deg); }
+
+/* Slide 18 — the takeaway is a poster strip, not another row of cards. */
+.summary-slide .grid3 { gap:clamp(15px,2.5vw,32px); align-items:stretch; }
+.summary-slide .grid3 .card { background:transparent !important; border:0; border-top:3px solid var(--red); padding:17px 8px 14px; box-shadow:none; transform:none; overflow:visible; }
+.summary-slide .grid3 .card:nth-child(2) { border-color:var(--blue); }
+.summary-slide .grid3 .card:nth-child(3) { border-color:var(--green); }
+.summary-slide .grid3 .card:before { display:block; margin-bottom:23px; font:italic 700 13px Georgia,serif; color:var(--red); }
+.summary-slide .grid3 .card:nth-child(1):before { content:"01 / СМЫСЛ"; }
+.summary-slide .grid3 .card:nth-child(2):before { content:"02 / ВОПРОС"; color:var(--blue); }
+.summary-slide .grid3 .card:nth-child(3):before { content:"03 / ФОРМА"; color:var(--green); }
+.summary-slide .grid3 .card .tag { display:none; }
+.summary-slide .grid3 .card .word { font-size:clamp(25px,3.4vw,44px); min-height:2em; }
+.summary-slide .formula { position:relative; max-width:100%; font-size:clamp(18px,2.7vw,36px); transform:rotate(.35deg); box-shadow:6px 6px 0 var(--blue); }
+
+/* Slide 19 — credits as a colophon at the back of a small publication. */
+.sources-slide .source-list { gap:clamp(20px,4vw,54px); margin-top:4vh; }
+.sources-slide .source { position:relative; padding:18px 0 14px 17px; border-top:2px solid var(--ink); border-bottom:1px solid var(--line); }
+.sources-slide .source:before { content:"↗"; position:absolute; left:0; top:17px; color:var(--red); font:700 14px Georgia,serif; }
+.sources-slide .source b { font:900 clamp(16px,1.8vw,22px) var(--display); letter-spacing:-.045em; }
+.sources-slide .source a { display:inline-block; margin-top:10px; font:10px var(--mono); letter-spacing:.08em; border-bottom:1px solid var(--blue); text-decoration:none; }
+.sources-slide .note-strip { margin-top:23px; }
+
+/* Slide 20 — a final overprinted word, with a little more air and less template symmetry. */
+.end-slide { background:#1d1e1b; }
+.end-slide .final-poster { grid-template-columns:1.05fr .95fr; gap:5vw; }
+.end-slide .final-word { font-size:clamp(130px,23vw,320px); line-height:.68; color:var(--yellow); letter-spacing:-.17em; text-shadow:9px 8px 0 var(--red), -2px -2px 0 rgba(255,255,255,.15); transform:rotate(-5deg); transform-origin:left center; }
+.end-slide .final-word:after { background:var(--paper); width:86%; height:4px; left:5%; top:56%; transform:rotate(-6deg); }
+.end-slide .final-copy { font-size:clamp(22px,3.2vw,44px); border-left:3px solid var(--red); padding-left:19px; }
+.end-slide .final-stamp { background:transparent; border:1px solid var(--yellow); color:var(--yellow); transform:rotate(-2deg); }
+.end-slide .final-poster:after { content:"ЗАПОМНИ СЛОВО.\A УВИДЬ МИР."; white-space:pre; position:absolute; right:5%; bottom:18%; font:9px var(--mono); letter-spacing:.15em; line-height:2; color:rgba(244,239,229,.42); text-align:right; }
+
+/* Reduce identical hover behaviour: the paper should feel physical, not like a dashboard. */
+.card { border-radius:0; }
+.card:hover { transform:translateY(-2px); }
+button { -webkit-tap-highlight-color:transparent; }
+button:focus-visible { outline:2px dashed var(--blue); outline-offset:4px; }
+@media(max-width:850px) {
+  .topbar { left:5vw; right:5vw; }
+  .cover .content { grid-template-columns:1fr; }
+  .cover-orbit { width:min(40vw,340px); }
+  .taxonomy-slide .grid6 { grid-template-columns:repeat(2,minmax(0,1fr)); gap:9px 15px; }
+  .taxonomy-slide .grid6 .card { min-height:130px; }
+  .identity-content:before { font-size:32vw; }
+  .identity-panel { min-height:22vh; }
+  .system-slide .steps:before { left:10%; right:10%; }
+  .gender-slide .gender-cards { gap:10px; }
+  .syntax-slide .syntax-grid { gap:8px; }
+  .syntax-slide .syntax-item:nth-child(2), .syntax-slide .syntax-item:nth-child(4) { transform:translateY(10px); }
+  .end-slide .final-word { font-size:clamp(100px,22vw,230px); }
+}
+@media(max-width:650px) {
+  .topbar { top:11px; padding-bottom:5px; }
+  .brand { gap:7px; font-size:8px; }
+  .brand-mark { width:20px; height:20px; }
+  .slide:before { top:7.1vh; left:3vw; width:12px; height:12px; }
+  .taxonomy-slide .grid6 { grid-template-columns:repeat(2,minmax(0,1fr)); gap:7px 12px; }
+  .taxonomy-slide .grid6 .card { padding:10px 7px 10px 10px; min-height:118px; }
+  .specimen-icon { width:30px; height:30px; margin-bottom:5px; }
+  .taxonomy-slide .grid6 .card .word { font-size:clamp(20px,5.4vw,29px); }
+  .taxonomy-slide .grid6 .card p { font-size:10px; }
+  .identity-compare { grid-template-columns:1fr 1fr; gap:8px; }
+  .identity-panel:first-child { box-shadow:5px 5px 0 var(--red); }
+  .identity-panel:last-child { box-shadow:4px 4px 0 rgba(29,30,27,.12); }
+  .identity-panel .giant { font-size:clamp(24px,6.5vw,37px); }
+  .question-panel { min-height:174px; }
+  .question-mark { font-size:clamp(42px,11vw,63px); }
+  .system-slide .steps { gap:8px; }
+  .system-slide .step { padding:10px 8px; min-height:147px; }
+  .system-slide .step .num { width:38px; height:38px; font-size:24px; }
+  .gender-slide .gender-cards { gap:6px; }
+  .gender-slide .gender-card { min-height:17vh; padding:10px 8px; }
+  .gender-slide .gender-card .pronoun { font-size:clamp(16px,4vw,22px); }
+  .gender-slide .gender-card .example { font-size:clamp(21px,5.5vw,31px); margin:3vh 0 1vh; }
+  .number-slide .number-stage { padding:25px 8px; }
+  .number-slide .number-stage .noun { font-size:clamp(25px,7vw,43px); }
+  .initial-form-slide .passport-visual { min-height:255px; height:255px; }
+  .initial-form-slide .passport-card { min-height:185px; }
+  .initial-form-slide .passport-card strong { font-size:clamp(36px,10vw,52px); }
+  .case-slide .case-button { padding:10px 3px; }
+  .case-slide .case-button strong { font-size:15px; }
+  .syntax-slide .syntax-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; }
+  .syntax-slide .syntax-item { transform:none !important; }
+  .syntax-slide .syntax-item .example { min-height:0; }
+  .syntax-slide .note-strip { margin-top:16px; }
+  #nounQuiz { font-size:clamp(22px,5.7vw,31px); line-height:1.8; padding:10px 0; }
+  .summary-slide .grid3 { gap:8px; }
+  .summary-slide .grid3 .card { padding:12px 5px 10px; }
+  .summary-slide .grid3 .card .word { font-size:clamp(19px,4.9vw,29px); }
+  .summary-slide .formula { font-size:clamp(15px,4vw,22px); }
+  .end-slide .final-poster { grid-template-columns:1fr; gap:4vh; }
+  .end-slide .final-word { font-size:clamp(100px,28vw,160px); }
+  .end-slide .final-poster:after { display:none; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .cover-orbit { animation:none !important; }
+}
+
+/* AUTHOR LOCKUP: fixed in the file, never prompts the presenter for input. */
+.author-lockup { display:flex; align-items:center; gap:9px; color:rgba(255,255,255,.62); letter-spacing:.12em; }
+.author-lockup b { color:#fff; }
+.author-group { margin-left:5px; padding:4px 7px; border:1px solid rgba(240,220,87,.6); color:var(--yellow); }
+
+/* Slide 05 — a word-relation diagram instead of another row of cards. */
+.dependency-slide { background:#20211e; }
+.dependency-content { max-width:1160px; }
+.dependency-content h2 { font-size:clamp(37px,6.1vw,82px); max-width:1020px; }
+.dependency-lead { margin-top:16px; color:rgba(244,239,229,.78); max-width:830px; }
+.dependency-lead strong { color:var(--yellow); }
+.dependency-stage { display:grid; grid-template-columns:minmax(180px,.78fr) minmax(90px,.5fr) minmax(270px,1.15fr); gap:clamp(12px,2vw,24px); align-items:center; margin-top:clamp(18px,3vh,32px); }
+.adjective-column,.noun-column { display:flex; flex-direction:column; align-items:stretch; gap:10px; min-width:0; }
+.dependency-slide .tiny { color:rgba(244,239,229,.58); margin-bottom:4px; }
+.adjective-chip { border:1px solid rgba(244,239,229,.35); background:transparent; color:var(--paper); padding:12px 14px; text-align:left; font:900 clamp(20px,3.1vw,38px)/1 var(--display); letter-spacing:-.065em; cursor:pointer; transition:transform .2s,background .2s,color .2s,box-shadow .2s; }
+.adjective-chip:nth-of-type(2) { transform:translateX(12px) rotate(-1deg); }
+.adjective-chip:nth-of-type(3) { transform:translateX(4px) rotate(.5deg); }
+.adjective-chip:hover,.adjective-chip.selected { background:var(--yellow); color:var(--ink); border-color:var(--yellow); box-shadow:6px 6px 0 var(--red); transform:translate(-3px,-2px) rotate(-1deg); }
+.dependency-link { align-self:stretch; display:flex; flex-direction:column; justify-content:center; align-items:center; position:relative; color:var(--yellow); }
+.dependency-link span { font:900 clamp(45px,7vw,82px)/.8 var(--display); }
+.dependency-link i { width:1px; height:28px; background:var(--red); margin:9px 0; }
+.dependency-link small { font:8px var(--mono); letter-spacing:.11em; text-align:center; line-height:1.6; color:rgba(244,239,229,.62); }
+.noun-specimen { position:relative; display:flex; align-items:center; gap:clamp(12px,2vw,22px); min-height:142px; padding:20px; background:var(--paper); color:var(--ink); box-shadow:8px 8px 0 var(--red); transform:rotate(1.2deg); transition:transform .25s; }
+.noun-specimen:before { content:""; position:absolute; inset:7px; border:1px solid rgba(32,33,31,.22); pointer-events:none; }
+.noun-specimen .noun-glyph { display:grid; place-items:center; flex:0 0 clamp(55px,7vw,83px); aspect-ratio:1; background:var(--blue); color:white; font:900 clamp(35px,5vw,58px)/1 var(--display); transform:rotate(-4deg); box-shadow:4px 4px 0 var(--yellow); }
+.noun-specimen div { display:flex; flex-direction:column; min-width:0; }
+.noun-specimen small { font:9px var(--mono); letter-spacing:.1em; color:#5a5a54; }
+.noun-specimen strong { font:900 clamp(26px,4.2vw,54px)/.95 var(--display); letter-spacing:-.08em; overflow-wrap:anywhere; }
+.noun-specimen em { font:italic 700 clamp(14px,1.6vw,19px) Georgia,serif; color:var(--red); margin-top:8px; }
+.agree-note { margin-top:6px; padding:8px 2px; font:10px var(--mono); color:var(--yellow); letter-spacing:.09em; }
+.dependency-foot { display:flex; gap:13px; border-top:1px solid rgba(244,239,229,.25); padding-top:12px; margin-top:clamp(15px,2.5vh,24px); max-width:1040px; font-size:clamp(11px,.95vw,13px); line-height:1.5; color:rgba(244,239,229,.72); }
+.dependency-foot b { flex:0 0 150px; color:var(--yellow); font:9px var(--mono); letter-spacing:.1em; padding-top:2px; }
+.dependency-foot span { max-width:850px; }
+
+/* Challenge slides should feel like a language puzzle, not a school worksheet. */
+.quiz-lead { margin-top:13px; border-left:2px solid var(--yellow); padding-left:13px; color:rgba(255,255,255,.76); }
+.trick-questions { grid-template-columns:repeat(3,minmax(0,1fr)); align-items:stretch; gap:10px; margin-top:clamp(17px,2.6vh,27px); }
+.trick-questions .quiz-question { padding:clamp(13px,1.6vw,20px); border:0; border-top:2px solid rgba(255,255,255,.55); background:rgba(255,255,255,.055); }
+.trick-questions .quiz-question:nth-child(2) { border-top-color:var(--yellow); transform:translateY(10px) rotate(.25deg); }
+.trick-questions .quiz-question:nth-child(3) { border-top-color:var(--red); transform:translateY(-4px) rotate(-.25deg); }
+.quiz-stamp { display:block; color:var(--yellow); font:9px var(--mono); letter-spacing:.13em; margin-bottom:12px; }
+.trick-questions .quiz-question h3 { font-size:clamp(16px,1.55vw,21px); min-height:3.2em; line-height:1.12; margin-bottom:14px; }
+.trick-questions .options { flex-direction:column; align-items:stretch; }
+.trick-questions .option { text-align:left; font-size:clamp(11px,.95vw,13px); line-height:1.35; min-height:44px; }
+.trick-questions .feedback { color:var(--yellow); font-size:10px; line-height:1.45; }
+.trick-questions .option.correct,.context-questions .option.correct { background:var(--green); color:#fff; border-color:var(--green); box-shadow:3px 3px 0 var(--yellow); }
+.trick-questions .option.incorrect,.context-questions .option.incorrect { background:var(--red); color:white; border-color:var(--red); }
+.trick-questions .option.answer-key,.context-questions .option.answer-key { outline:1px dashed var(--yellow); outline-offset:2px; }
+.rapid-quiz-slide.quiz-perfect:after,.context-quiz-slide.quiz-perfect:after { content:"✓"; writing-mode:horizontal-tb; top:13%; right:7%; color:var(--yellow); font:900 clamp(65px,12vw,138px)/1 var(--display); opacity:.13; border:0; transform:rotate(-8deg); }
+.context-quiz-slide .content { max-width:1080px; }
+.context-quiz-slide h2 { max-width:800px; font-size:clamp(38px,6vw,79px); }
+.context-quiz-slide .quiz-lead { color:#414139; border-color:var(--red); }
+.context-questions { grid-template-columns:1fr 1fr; gap:clamp(13px,2vw,24px); align-items:stretch; margin-top:clamp(17px,2.5vh,27px); }
+.context-questions .quiz-question { background:rgba(255,255,255,.55); border:0; border-top:3px solid var(--ink); padding:clamp(15px,2vw,25px); }
+.context-questions .quiz-question:nth-child(2) { border-top-color:var(--red); transform:translateY(12px) rotate(.25deg); }
+.context-questions .quiz-stamp { color:var(--red); }
+.context-questions .quiz-question h3 { font-size:clamp(17px,1.8vw,24px); line-height:1.12; min-height:3em; margin-bottom:15px; }
+.context-questions .options { display:flex; flex-direction:column; align-items:stretch; }
+.context-questions .option { text-align:left; font-size:clamp(11px,1vw,13px); line-height:1.4; }
+.context-questions .feedback { color:#a62c21; font:10px var(--mono); line-height:1.5; min-height:30px; margin-top:11px; }
+.context-quiz-slide .quiz-score { color:var(--red); }
+.context-quiz-slide .quiz-score.success { color:white; background:var(--green); padding:8px 10px; }
+.context-microcopy { margin-top:25px; border-top:1px solid var(--line); padding-top:10px; color:#77766f; font:9px var(--mono); letter-spacing:.11em; }
+
+/* The finale: slow cinema-style crawl, with language facts as the credits. */
+.credits-slide { background:#060706 !important; color:#f4efe5; padding:0 !important; align-items:stretch; justify-content:flex-start; }
+.credits-slide:before,.credits-slide:after { display:none !important; }
+.credits-slide.active { transform:none; filter:none; }
+.credits-stage { position:absolute; inset:0; overflow:hidden; background:radial-gradient(ellipse at 50% 40%,rgba(49,50,45,.22),transparent 58%),#060706; }
+.credits-grain { position:absolute; inset:0; pointer-events:none; opacity:.12; background-image:repeating-linear-gradient(0deg,transparent 0 3px,rgba(255,255,255,.055) 4px,transparent 5px); }
+.credits-roll { position:absolute; left:0; right:0; top:0; width:min(100%,900px); margin:0 auto; padding:0 32px 12vh; text-align:center; transform:translateY(100vh); animation:creditsCrawl 72s linear forwards; }
+@keyframes creditsCrawl { from { transform:translateY(43vh); } to { transform:translateY(var(--credits-stop-y, calc(-100% - 110vh))); } }
+.credits-opening { min-height:88vh; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:18px; }
+.credits-overline,.credit-fact>span,.credit-easter>span { color:var(--yellow); font:10px var(--mono); letter-spacing:.19em; }
+.credits-opening h2 { margin-top:10px; font-size:clamp(45px,8vw,100px); line-height:.88; }
+.credits-opening h2 em,.credits-ending h2 em { color:var(--red); }
+.credits-tagline { color:rgba(244,239,229,.72); font:italic 700 clamp(17px,2.2vw,25px) Georgia,serif; margin-top:12px; }
+.credits-author { display:flex; flex-direction:column; align-items:center; gap:7px; margin-top:28px; font:10px var(--mono); letter-spacing:.15em; }
+.credits-author strong { color:#fff; font-weight:700; font-size:clamp(12px,1.4vw,16px); }
+.credits-author span { padding:5px 8px; border:1px solid rgba(240,220,87,.52); color:var(--yellow); }
+.credit-divider { color:var(--red); font:16px var(--mono); letter-spacing:.25em; margin:9vh 0; }
+.credit-fact { min-height:55vh; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:30px 0; }
+.credit-fact h3,.credit-easter h3 { margin:22px 0 16px; font:900 clamp(31px,5.5vw,64px)/.95 var(--display); letter-spacing:-.07em; text-wrap:balance; }
+.credit-fact h3 em { color:var(--yellow); }
+.credit-fact p,.credit-easter p { max-width:590px; color:rgba(244,239,229,.65); font:16px/1.65 Georgia,serif; }
+.credit-easter { min-height:48vh; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:20px 0; }
+.credit-easter h3 { color:var(--yellow); font-size:clamp(28px,4.6vw,56px); }
+.credit-easter p { color:var(--red); font-style:italic; }
+.credits-ending { min-height:90vh; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:22px; }
+.credits-ending>p { color:rgba(244,239,229,.6); font:10px var(--mono); letter-spacing:.2em; }
+.credits-ending h2 { font-size:clamp(55px,9vw,112px); }
+.credits-ending small { color:rgba(244,239,229,.38); font:9px var(--mono); letter-spacing:.15em; margin-top:35px; }
+.credits-skip { position:absolute; left:50%; right:auto; bottom:66px; transform:translateX(-50%); border:1px solid rgba(244,239,229,.25); background:rgba(6,7,6,.88); color:rgba(244,239,229,.72); padding:9px 11px; font:9px var(--mono); letter-spacing:.1em; cursor:pointer; z-index:25; transition:color .2s,border-color .2s; }
+.credits-skip:hover { color:var(--yellow); border-color:var(--yellow); }
+.credits-skip:disabled { opacity:.5; cursor:default; }
+.deck:has(.credits-slide.active) .topbar,.deck:has(.credits-slide.active) .advance { display:none !important; }
+.deck:has(.credits-slide.active) .footer { display:flex !important; color:rgba(244,239,229,.78); z-index:30; padding:9px 10px; border-top:1px solid rgba(244,239,229,.18); background:linear-gradient(90deg,rgba(6,7,6,.92),rgba(6,7,6,.72),rgba(6,7,6,.92)); }
+.deck:has(.credits-slide.active) .footer .progress { background:rgba(244,239,229,.18); }
+.deck:has(.credits-slide.active) .footer .progress span { background:var(--yellow); }
+.credits-roll.fast-roll { animation-duration:24s; }
+@media(max-width:850px) {
+ .dependency-stage { grid-template-columns:.82fr .25fr 1fr; gap:10px; }
+ .dependency-foot b { flex-basis:125px; }
+ .trick-questions { grid-template-columns:1fr; gap:8px; }
+ .trick-questions .quiz-question,.trick-questions .quiz-question:nth-child(2),.trick-questions .quiz-question:nth-child(3) { transform:none; }
+ .trick-questions .quiz-question h3 { min-height:0; }
+ .trick-questions .options { flex-direction:row; flex-wrap:wrap; }
+ .trick-questions .option { flex:1 1 180px; }
+ .trick-questions .feedback { min-height:0; }
+ .credits-roll { width:min(100%,720px); }
+}
+@media(max-width:620px) {
+ .dependency-slide .content { padding-top:15px; }
+ .dependency-content h2 { font-size:clamp(31px,8vw,48px); }
+ .dependency-lead { font-size:13px; }
+ .dependency-stage { grid-template-columns:1fr; gap:10px; margin-top:14px; }
+ .adjective-column { display:grid; grid-template-columns:1fr 1fr; gap:7px; }
+ .adjective-column .tiny { grid-column:1/-1; }
+ .adjective-chip { font-size:clamp(17px,5vw,24px); padding:10px; }
+ .adjective-chip:nth-of-type(2),.adjective-chip:nth-of-type(3) { transform:none; }
+ .dependency-link { flex-direction:row; gap:11px; min-height:22px; }
+ .dependency-link span { font-size:30px; }
+ .dependency-link i { width:26px; height:1px; margin:0; }
+ .dependency-link small { max-width:120px; text-align:left; font-size:7px; }
+ .noun-specimen { min-height:92px; padding:14px; }
+ .noun-specimen .noun-glyph { flex-basis:55px; }
+ .noun-specimen strong { font-size:clamp(26px,7vw,38px); }
+ .dependency-foot { gap:7px; margin-top:11px; font-size:10px; }
+ .dependency-foot b { flex-basis:86px; font-size:8px; }
+ .context-questions { grid-template-columns:1fr; gap:10px; }
+ .context-questions .quiz-question:nth-child(2) { transform:none; }
+ .context-questions .quiz-question h3 { min-height:0; }
+ .context-questions .feedback { min-height:0; }
+ .context-microcopy { margin-top:12px; }
+ .credits-roll { padding:0 22px 8vh; }
+ .credits-opening { min-height:80vh; }
+ .credit-fact { min-height:50vh; }
+ .credit-fact p,.credit-easter p { font-size:14px; }
+ .credits-skip { left:50%; right:auto; bottom:70px; padding:8px 10px; font-size:8px; }
+}
+@media(prefers-reduced-motion:reduce) {
+ .credits-roll { animation:none !important; position:relative; top:auto; transform:none; margin:0 auto; }
+ .credits-stage { overflow-y:auto; }
+ .credits-skip { display:none; }
+ .adjective-chip,.noun-specimen { transition:none; }
+}
+
+
+/* Final mobile pass: keep the challenge readable above the transport controls. */
+@media(max-width:850px) {
+  .rapid-quiz-slide #rapidQuiz { grid-template-columns:1fr !important; gap:8px; }
+}
+@media(max-width:620px) {
+  .rapid-quiz-slide { justify-content:flex-start; padding-top:70px; padding-bottom:62px; }
+  .rapid-quiz-slide > .content { margin:0 auto; }
+  .rapid-quiz-slide h2 { font-size:clamp(27px,7.5vw,37px); line-height:.91; }
+  .rapid-quiz-slide .eyebrow { margin-bottom:9px; }
+  .rapid-quiz-slide .quiz-lead { font-size:11px; line-height:1.28; margin-top:8px; }
+  .rapid-quiz-slide #rapidQuiz { grid-template-columns:1fr !important; gap:6px; margin-top:11px; }
+  .rapid-quiz-slide #rapidQuiz .quiz-question { padding:9px 10px 10px; }
+  .rapid-quiz-slide #rapidQuiz .quiz-stamp { font-size:8px; margin-bottom:5px; }
+  .rapid-quiz-slide #rapidQuiz .quiz-question h3 { min-height:0; font-size:14px; line-height:1.12; margin-bottom:7px; }
+  .rapid-quiz-slide #rapidQuiz .options { display:flex; flex-direction:column; gap:4px; }
+  .rapid-quiz-slide #rapidQuiz .option { flex:none; min-height:30px; padding:6px 8px; font-size:10px; line-height:1.25; }
+  .rapid-quiz-slide #rapidQuiz .feedback { margin-top:5px; font-size:9px; line-height:1.3; }
+  .rapid-quiz-slide .quiz-bar { margin-top:8px; padding-bottom:8px; }
+  .rapid-quiz-slide .quiz-score { font-size:9px; }
+  .context-quiz-slide .context-microcopy { display:none; }
+  .credits-roll { width:100%; max-width:100%; padding-left:18px; padding-right:18px; }
+  .credits-opening h2 { font-size:clamp(38px,9vw,58px); }
+  .credits-opening h2 em { display:block; font-size:clamp(28px,8.2vw,36px); letter-spacing:-.09em; white-space:nowrap; }
+}
+
+
+/* Start the credits only when the final slide is actually opened. */
+.credits-roll { animation:none; transform:translateY(43vh); }
+.credits-slide.active .credits-roll { animation:creditsCrawl 110s linear forwards; }
+.credits-slide.active .credits-roll.fast-roll { animation-duration:24s; }
+@media(max-width:620px) {
+  .rapid-quiz-slide #rapidQuiz .quiz-question { padding:7px 9px 8px; }
+  .rapid-quiz-slide #rapidQuiz .quiz-stamp { margin-bottom:3px; }
+  .rapid-quiz-slide #rapidQuiz .quiz-question h3 { font-size:12px; margin-bottom:4px; }
+  .rapid-quiz-slide #rapidQuiz .option { min-height:24px; padding:4px 7px; font-size:9px; line-height:1.15; }
+  .rapid-quiz-slide #rapidQuiz .options { gap:3px; }
+  .rapid-quiz-slide #rapidQuiz .feedback { margin-top:3px; font-size:8px; }
+  .rapid-quiz-slide .quiz-bar { margin-top:6px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .credits-roll,.credits-slide.active .credits-roll { animation:none !important; transform:none; }
+}
+
+</style>
+</head>
+<body>
+<div class="deck" id="deck">
+<header class="topbar"><span class="brand"><span class="brand-mark">И</span> ИМЯ СУЩЕСТВИТЕЛЬНОЕ</span><span class="topic">РУССКИЙ ЯЗЫК · МОРФОЛОГИЯ</span></header>
+<main class="slides" id="slides">
+<section class="slide cover dark active" data-notes="Начни не с определения, а с паузы. Скажи: «Вокруг нас тысячи вещей, чувств и явлений. Мы можем замечать их, потому что умеем давать им имена». Представь тему и задай тон: это не список окончаний, а маленькое исследование того, как устроены слова." data-time="0:35">
+<div class="content">
+<div class="cover-copy"><div class="eyebrow enter">Слово · форма · смысл</div><h1 class="cover-title enter d2"><span class="serif">ИМЯ</span><span class="block">СУЩЕСТВИТЕЛЬНОЕ</span></h1><p class="cover-deck enter d3">Маленькое слово.<br/>Целый мир, который оно называет.</p><div class="cover-meta enter d4"><span>МОРФОЛОГИЯ · РАЗБОР И ПРАКТИКА</span><span>АЛИХАН БЕКТУРОВ · SCA-26A</span></div><div class="tiny author-lockup" style="margin-top:15px">АВТОР / <b id="authorHero" style="color:#fff">АЛИХАН БЕКТУРОВ</b><span class="author-group">SCA-26A</span></div></div>
+<div aria-hidden="true" class="cover-art"><span class="cover-sticker">СЛОВО № 001</span><div class="cover-orbit"><div class="orbit-core">ИМЯ</div><span class="orbit-word ow1">дом</span><span class="orbit-word ow2">тишина</span><span class="orbit-word ow3">Бишкек</span><span class="orbit-word ow4">надежда</span></div></div>
+</div>
+</section>
+<section class="slide red mystery-slide" data-notes="Дай аудитории несколько секунд посмотреть на слова. Спроси: что общего у пса, тишины, дружбы и дождя? Они очень разные, но каждое слово называет что-то и отвечает на вопрос кто? или что? Нажимайте карточки, чтобы открыть объяснение." data-time="0:40">
+<div class="content"><div class="eyebrow">01 / загадка на входе</div><h2>ЧТО ОБЩЕГО<br/>У ЭТИХ <em>ЧЕТВЕРЫХ?</em></h2><div class="grid4" id="mysteryGrid">
+<button class="card" data-reveal="ПЁС — кто? Живое существо."><span class="tag">СЛОВО А</span><span class="word">ПЁС</span><p>Смотрит так, будто ты должен ему деньги.</p><span class="reveal">ПЁС — КТО?</span></button>
+<button class="card" data-reveal="ТИШИНА — что? Состояние, а не предмет в руках."><span class="tag">СЛОВО Б</span><span class="word">ТИШИНА</span><p>Её нельзя положить на полку.</p><span class="reveal">ТИШИНА — ЧТО?</span></button>
+<button class="card" data-reveal="ДРУЖБА — что? Отношение и чувство."><span class="tag">СЛОВО В</span><span class="word">ДРУЖБА</span><p>Её не видно, но она существует.</p><span class="reveal">ДРУЖБА — ЧТО?</span></button>
+<button class="card" data-reveal="ДОЖДЬ — что? Природное явление."><span class="tag">СЛОВО Г</span><span class="word">ДОЖДЬ</span><p>Он стучит по окну и пахнет летом.</p><span class="reveal">ДОЖДЬ — ЧТО?</span></button>
+</div><div class="interactive-result" id="mysteryResult">Нажми на каждую карточку. Затем попробуй сформулировать правило сам.</div></div>
+</section>
+<section class="slide" data-notes="После догадки сформулируй определение. Существительное обозначает предмет в широком грамматическом смысле. Оно отвечает на вопросы кто? или что? Важно: «предмет» в грамматике не равен только физической вещи. Существительное может называть человека, явление, чувство, действие или состояние." data-time="0:45">
+<div class="content definition"><div><div class="eyebrow">02 / официальная версия</div><h2>СЛОВО,<br/>КОТОРОЕ<br/>ДАЁТ <em>ИМЯ.</em></h2><div class="rule"></div><p class="definition-quote">Имя существительное — самостоятельная часть речи, которая обозначает <mark>предмет в широком смысле</mark> и отвечает на вопросы <mark>кто? что?</mark></p></div><aside class="definition-side"><div class="tiny" style="color:rgba(255,255,255,.7)">Запомни ядро правила</div><div class="bigmark">КТО?<br/>ЧТО?</div><p>Если слово называет кого-то или что-то — задай этот вопрос. Это первый шаг, а не весь морфологический разбор.</p></aside></div>
+</section>
+<section class="slide cream taxonomy-slide" data-notes="Имя существительное называет предмет в широком грамматическом смысле: человека, вещь, явление, чувство, действие или качество. «Предмет» не обязательно можно потрогать. Ученик, ключ, гроза, радость, бег и смелость — разные значения одной части речи." data-time="0:40">
+<div class="content"><div class="eyebrow">03 / предмет — это шире, чем вещь</div><h2>СУЩЕСТВИТЕЛЬНОЕ<br/>НАЗЫВАЕТ <em>РАЗНОЕ.</em></h2><p class="lead muted consolidated-intro">В грамматике «предмет» — не только вещь: существительное может называть человека, явление, чувство, действие или качество.</p><div class="grid6">
+<div class="card"><svg aria-hidden="true" class="specimen-icon icon-person" viewbox="0 0 48 48"><circle cx="23" cy="13" r="7"></circle><path d="M10 39c1-9 6-14 13-14s12 5 14 14"></path><path d="M7 43h33"></path></svg><span class="tag">01 / живое</span><span class="word">УЧЕНИК</span><p>Человек, лицо.</p></div><div class="card"><svg aria-hidden="true" class="specimen-icon icon-key" viewbox="0 0 48 48"><circle cx="15" cy="19" r="9"></circle><circle cx="15" cy="19" r="3"></circle><path d="M23 25 39 41m-6-6 5-5m-10 0 5-5"></path></svg><span class="tag">02 / вещь</span><span class="word">КЛЮЧ</span><p>То, что можно взять.</p></div><div class="card"><svg aria-hidden="true" class="specimen-icon icon-storm" viewbox="0 0 48 48"><path d="M8 27c-2-7 3-13 10-12 4-9 18-7 20 3 7 0 8 10 1 12H10"></path><path d="m25 24-7 11h7l-2 9 10-14h-7l3-6"></path></svg><span class="tag">03 / явление</span><span class="word">ГРОЗА</span><p>То, что происходит в природе.</p></div><div class="card"><svg aria-hidden="true" class="specimen-icon icon-heart" viewbox="0 0 48 48"><path d="M24 40S6 28 6 16C6 7 17 4 24 14 31 4 42 7 42 16 42 28 24 40 24 40Z"></path><path d="m11 24 7-1 4-8 5 15 4-7h6"></path></svg><span class="tag">04 / чувство</span><span class="word">РАДОСТЬ</span><p>Внутреннее состояние.</p></div><div class="card"><svg aria-hidden="true" class="specimen-icon icon-motion" viewbox="0 0 48 48"><circle cx="31" cy="9" r="4"></circle><path d="m26 15-8 9 8 5 5-7 7 4M18 24l-8-2M26 29l-5 9-8 3m18-14 5 10"></path><path d="M6 11h9M4 16h6"></path></svg><span class="tag">05 / действие</span><span class="word">БЕГ</span><p>Процесс, действие.</p></div><div class="card"><svg aria-hidden="true" class="specimen-icon icon-star" viewbox="0 0 48 48"><path d="m24 4 5.5 13.5L44 19l-11 9 3.5 15L24 35l-12.5 8L15 28 4 19l14.5-1.5Z"></path><path d="M7 5 10 9m29 1 3-3"></path></svg><span class="tag">06 / качество</span><span class="word">СМЕЛОСТЬ</span><p>Качество или свойство.</p></div>
+</div></div>
+</section>
+<section class="slide yellow identity-slide" data-notes="Собственное имя выделяет один конкретный объект, нарицательное называет тип объектов. Сначала покажи Бишкек как уникальное имя города, затем — город как общее название целого класса. Собственные имена пишутся с прописной буквы." data-time="0:40">
+<div class="content identity-content">
+<div class="eyebrow">04 / имя и тип</div>
+<h2 class="identity-heading">ОДНО — <em>УНИКАЛЬНО.</em><br/>ДРУГОЕ — ТИП.</h2>
+<div class="compare identity-compare">
+<div class="compare-panel invert identity-panel">
+<span class="tiny">СОБСТВЕННОЕ ИМЯ</span>
+<div class="giant">Бишкек</div>
+<p>Имя конкретного города — одного определённого места.</p>
+<span class="identity-foot">ОДИН ОБЪЕКТ</span>
+</div>
+<div class="compare-panel identity-panel">
+<span class="tiny">НАРИЦАТЕЛЬНОЕ</span>
+<div class="giant">город</div>
+<p>Общее название типа объектов: город, река, человек, кошка.</p>
+<span class="identity-foot">ЦЕЛЫЙ КЛАСС</span>
+</div>
+</div>
+<div class="note-strip"><b>КЛЮЧ</b><span><strong>Бишкек</strong> — уникальное имя; <strong>город</strong> — общий тип. Поэтому первое пишется с прописной буквы, второе — обычно со строчной.</span></div>
+</div>
+</section>
+<section class="slide dark dependency-slide" data-notes="Сделай важную смысловую паузу: существительное называет то, о чём идёт речь, а прилагательное уточняет признак этого предмета. Покажи пары «красный макет», «холодное море», «тихая улица»: форма прилагательного согласуется с существительным. Не утверждай, что прилагательное вообще не может употребляться отдельно: в контексте существительное иногда опускается («возьму красный»), а некоторые прилагательные субстантивируются («дежурный вошёл»). Эта оговорка делает объяснение грамматически точным." data-time="0:50">
+<div class="content dependency-content">
+<div class="eyebrow">05 / как слова держатся друг за друга</div>
+<h2>ПРИЗНАКУ НУЖНО<br/><em>ЧТО-ТО ОПИСАТЬ.</em></h2>
+<p class="lead dependency-lead">Существительное называет объект. Прилагательное уточняет, <strong>какой он</strong> — и обычно согласуется с ним.</p>
+<div class="dependency-stage">
+<div class="adjective-column">
+<span class="tiny">ПРИЗНАК</span>
+<button class="adjective-chip selected" data-adjective="0">КРАСНЫЙ</button>
+<button class="adjective-chip" data-adjective="1">ХОЛОДНОЕ</button>
+<button class="adjective-chip" data-adjective="2">ТИХАЯ</button>
+</div>
+<div class="dependency-link" aria-hidden="true"><span>→</span><i></i><small>КАКОЙ? КАКОЕ? КАКАЯ?</small></div>
+<div class="noun-column">
+<span class="tiny">ТО, ЧТО ОПИСЫВАЕМ</span>
+<div class="noun-specimen" id="nounSpecimen"><span class="noun-glyph">М</span><div><small>МУЖСКОЙ РОД</small><strong>МАКЕТ</strong><em>красный макет</em></div></div>
+<div class="agree-note" id="agreeNote">КРАСНЫЙ ↔ МАКЕТ · ОН МОЙ</div>
+</div>
+</div>
+<div class="dependency-foot"><b>ВАЖНАЯ ОГОВОРКА</b><span>Иногда существительное понятно из контекста: «возьму красный». А иногда прилагательное начинает называть человека или предмет: «дежурный вошёл». Но его обычная работа — описывать признак.</span></div>
+</div>
+</section>
+<section class="slide dark system-slide" data-notes="Сделай переход от значения к грамматике: у существительного есть морфологические признаки. В школьном разборе смотрят начальную форму, собственное или нарицательное, одушевлённость, род, число, падеж и склонение. Род, тип склонения и одушевлённость обычно относят к постоянным признакам; число и падеж меняются по контексту. Состав списков зависит от программы, поэтому главное здесь — понимать логику." data-time="0:40">
+<div class="content"><div class="eyebrow">06 / паспорт существительного</div><h2>СЛОВО — НЕ ХАОС.<br/><em>ЭТО СИСТЕМА.</em></h2><div class="steps"><div class="step"><div class="num">01</div><b>Что за слово?</b><p>Значение, начальная форма, собственное или нарицательное.</p></div><div class="step"><div class="num">02</div><b>Какие признаки?</b><p>Одушевлённость, род, число, склонение.</p></div><div class="step"><div class="num">03</div><b>Как работает?</b><p>Падеж и синтаксическая роль в предложении.</p></div></div><div class="note-strip"><b>Не путай</b><span>Часть признаков постоянная, другие меняются вместе с формой слова и контекстом.</span></div></div>
+</section>
+<section class="slide gender-slide" data-notes="Род в единственном числе удобно проверять сочетанием: он мой, она моя, оно моё. Мягкий знак сам по себе род не определяет: день — мужской род, тетрадь — женский. Род заметен и в согласовании: красный шар, красная книга, красное окно. Существительные общего рода (умница, плакса, забияка) уточняются контекстом." data-time="0:45">
+<div class="content"><div class="eyebrow">07 / род — это согласование</div><h2>ОН. ОНА. <em>ОНО.</em></h2><p class="lead muted" style="margin-top:14px">Проверь существительное местоимением — и услышишь род.</p><div class="gender-cards" id="genderGrid"><button class="gender-card" data-gender="m"><span class="pronoun">ОН МОЙ</span><span class="example">МАКЕТ</span><span class="detail">мужской род</span></button><button class="gender-card" data-gender="f"><span class="pronoun">ОНА МОЯ</span><span class="example">ИДЕЯ</span><span class="detail">женский род</span></button><button class="gender-card" data-gender="n"><span class="pronoun">ОНО МОЁ</span><span class="example">РЕШЕНИЕ</span><span class="detail">средний род</span></button></div><div class="interactive-result" id="genderResult">Выбери карточку: увидишь, как род проявляется в согласовании.</div><div class="note-strip merged-note"><b>Ловушка</b><span>Мягкий знак не определяет род сам по себе: <strong>день — он мой</strong>, <strong>тетрадь — она моя</strong>. Род влияет на согласование: красный шар · красная книга · красное окно.</span></div></div>
+</section>
+<section class="slide number-slide" data-notes="У большинства существительных есть формы единственного и множественного числа: макет — макеты, идея — идеи. Но часть слов обычно употребляется только в единственном числе (молоко, листва), а часть — только во множественном (ножницы, каникулы). В специальных значениях возможны исключения." data-time="0:40">
+<div class="content"><div class="eyebrow">08 / число — масштаб</div><h2>ОДИН ОБЪЕКТ.<br/><em>ИЛИ СРАЗУ НЕСКОЛЬКО.</em></h2><div class="number-toggle"><button class="pill selected" data-number="one">ОДИН</button><button class="pill" data-number="many">МНОГО</button></div><div class="number-stage"><div class="noun active" id="singularWord">МАКЕТ</div><div class="arrow">→</div><div class="noun" id="pluralWord">МАКЕТЫ</div></div><div class="interactive-result" id="numberExplain">Единственное число — один макет.</div><p class="small muted" style="margin-top:15px">Обе формы: идея → идеи · окно → окна. Обычно только ед. ч.: молоко, листва; только мн. ч.: ножницы, каникулы.</p></div>
+</section>
+<section class="slide initial-form-slide" data-notes="Начальная форма — форма именительного падежа единственного числа: макет, книга, ночь. Она помогает найти слово в словаре и определить склонение. Для существительных, которые обычно употребляются только во множественном числе, начальная форма определяется иначе — как форма именительного падежа множественного числа; это более продвинутый случай." data-time="0:40">
+<div class="content"><div class="eyebrow">09 / паспортная форма</div><div class="split"><div><h2>НАЧАЛЬНАЯ<br/>ФОРМА — ЭТО<br/><em>ПАСПОРТ.</em></h2><p class="lead muted" style="margin-top:20px">Обычно: именительный падеж, единственное число.</p><div class="steps"><div class="step"><div class="num">01</div><b>макетами</b><p>Ставим слово в начальную форму.</p></div><div class="step"><div class="num">02</div><b>макет</b><p>Именительный падеж, единственное число.</p></div></div></div><div aria-label="Начальная форма слова макет" class="passport-visual">
+<div class="passport-disc"></div>
+<div class="passport-card">
+<span class="passport-card-kicker">ФОРМА / 01</span>
+<strong>МАКЕТ</strong>
+<span class="passport-card-rule"></span>
+<span class="passport-card-meta">И. П. · ЕД. Ч.</span>
+</div>
+<span class="passport-orbit-label passport-label-top">МАКЕТАМИ</span>
+<span class="passport-orbit-label passport-label-bottom">→ МАКЕТ</span>
+<span class="passport-stamp">ПАСПОРТ СЛОВА</span>
+</div></div></div>
+</section>
+<section class="slide case-slide" data-notes="Одна лексема «книга» проходит через все шесть падежей. Нажми на падеж: увидишь форму слова, вопрос и пример в предложении. Именительный называет предмет; родительный часто встречается после «нет»; дательный обозначает адресата; винительный — объект действия; творительный отвечает на «кем? чем?»; предложный обычно употребляется с предлогом. Для определения падежа учитывай вопрос и контекст, а не только окончание." data-time="0:45">
+<div class="content"><div class="eyebrow">10 / форма подстраивается под роль</div><h2>ОДНО СЛОВО.<br/><em>ШЕСТЬ ОТНОШЕНИЙ.</em></h2><p class="small muted case-instruction">Выбери падеж — пример и объяснение изменятся. Смотри на вопрос и связь слова с предложением.</p><div class="case-grid" id="caseGrid"><button class="case-button active" data-case="0"><strong>И. п.</strong><small>кто? что?</small></button><button class="case-button" data-case="1"><strong>Р. п.</strong><small>кого? чего?</small></button><button class="case-button" data-case="2"><strong>Д. п.</strong><small>кому? чему?</small></button><button class="case-button" data-case="3"><strong>В. п.</strong><small>кого? что?</small></button><button class="case-button" data-case="4"><strong>Т. п.</strong><small>кем? чем?</small></button><button class="case-button" data-case="5"><strong>П. п.</strong><small>о ком? о чём?</small></button></div><div class="case-display"><div class="sentence" id="caseSentence"><span>Книга</span> лежит на столе.</div><div class="case-explain" id="caseExplain">ИМЕНИТЕЛЬНЫЙ · НАЗЫВАЕМ ТО, О ЧЁМ ГОВОРИМ.</div></div></div>
+</section>
+<section class="slide declension-slide" data-notes="В русском языке три основных типа склонения. Первое: в основном существительные женского и некоторые мужского рода на -а/-я — мама, земля, дядя. Второе: мужской род с нулевым окончанием и средний род на -о/-е — стол, конь, окно, море. Третье: существительные женского рода на мягкий знак — ночь, тетрадь. Есть исключения и особые слова, поэтому схема служит опорой." data-time="0:50">
+<div class="content"><div class="eyebrow">11 / три семейства</div><h2>СКЛОНЕНИЕ — ЭТО<br/><em>СЕМЕЙСТВО ФОРМ.</em></h2><table class="declension-table"><thead><tr><th>Склонение</th><th>Подсказка</th><th>Примеры</th></tr></thead><tbody><tr><td>1-е</td><td>Женский и некоторые существительные мужского рода на -а / -я</td><td>мама, земля, дядя</td></tr><tr><td>2-е</td><td>Мужской род с нулевым окончанием; средний на -о / -е</td><td>стол, конь, окно, море</td></tr><tr><td>3-е</td><td>Женский род на мягкий знак</td><td>ночь, тетрадь, мышь</td></tr></tbody></table><div class="note-strip"><b>Сначала</b><span>Определи начальную форму и род. Только потом выбирай склонение.</span></div></div>
+</section>
+<section class="slide blue algorithm-slide" data-notes="Дай алгоритм: поставь слово в начальную форму; определи род; посмотри на окончание. Затем выбери склонение. На примере „тетрадь“: начальная форма — тетрадь; женский род; мягкий знак на конце; третье склонение. Слова на -мя и слово путь имеют особенности, но их можно разобрать отдельно по учебнику." data-time="0:40">
+<div class="content"><div class="eyebrow">12 / не угадывай — проверь</div><h2>КАК НАЙТИ<br/><em>СКЛОНЕНИЕ?</em></h2><div class="steps"><div class="step"><div class="num">01</div><b>Начальная форма</b><p>тетрадями → тетрадь</p></div><div class="step"><div class="num">02</div><b>Род</b><p>она, моя → женский</p></div><div class="step"><div class="num">03</div><b>Окончание</b><p>мягкий знак → 3-е склонение</p></div></div><div class="formula" style="margin-top:28px">ТЕТРАДЬ → Ж. Р. → 3-Е СКЛОНЕНИЕ</div></div>
+</section>
+<section class="slide syntax-slide" data-notes="Существительное выполняет разные синтаксические роли. Важно не смешивать падеж и роль: падеж — морфологическая форма, а подлежащее, дополнение и другие роли — синтаксис. Одно и то же существительное может быть в разных падежах и выполнять разные функции в предложении." data-time="0:50">
+<div class="content"><div class="eyebrow">13 / существительное в предложении</div><h2>СЛОВО НЕ ПРОСТО<br/>СТОИТ. ОНО <em>РАБОТАЕТ.</em></h2><div class="syntax-grid"><div class="syntax-item"><span class="tiny">01 / подлежащее</span><b>Ветер</b><div class="example">Ветер стих.</div><p>О ком или о чём говорится?</p></div><div class="syntax-item"><span class="tiny">02 / дополнение</span><b>птиц</b><div class="example">Вижу птиц.</div><p>На кого/что направлено действие?</p></div><div class="syntax-item"><span class="tiny">03 / сказуемое</span><b>врач</b><div class="example">Мама — врач.</div><p>Именная часть сказуемого.</p></div><div class="syntax-item"><span class="tiny">04 / обстоятельство</span><b>субботу</b><div class="example">Встретимся в субботу.</div><p>Когда? В субботу.</p></div><div class="syntax-item"><span class="tiny">05 / определение</span><b>берёзы</b><div class="example">Ветка берёзы.</div><p>Чья? Ветка чего?</p></div></div><div class="note-strip"><b>Помни</b><span>Падеж отвечает за форму слова; синтаксическая роль — за работу слова в предложении.</span></div></div>
+</section>
+<section class="slide cream morphology-slide" data-notes="Покажи образец морфологического разбора. Предложение: «Макет готов». Слово «макет»: имя существительное; начальная форма — макет; нарицательное, неодушевлённое; мужской род, второе склонение; единственное число, именительный падеж; в предложении — подлежащее. Если в вашей программе требуется иной порядок пунктов, следуй школьному алгоритму учителя." data-time="0:50">
+<div class="content morphology-content">
+<div class="eyebrow">14 / разбор на практике</div>
+<div class="morphology-layout">
+<div class="morphology-left">
+<h2 class="analysis-title">МОРФОЛОГИЧЕСКИЙ<br/><em>РАЗБОР.</em></h2>
+<p class="lead muted morphology-lead">Предложение: «Макет готов».</p>
+<div aria-label="Макет — начальная форма слова" class="analysis-visual">
+<div class="analysis-disc"></div>
+<div class="analysis-word-card">
+<span class="analysis-card-kicker">СЛОВО / 01</span>
+<strong>МАКЕТ</strong>
+<span class="analysis-card-rule"></span>
+<span class="analysis-card-foot">НАЧАЛЬНАЯ ФОРМА</span>
+</div>
+<span class="analysis-chip">ОН МОЙ</span>
+<span class="analysis-stamp">И. П. · ЕД. Ч.</span>
+</div>
+</div>
+<div class="morphology-right">
+<div class="analysis-table-head"><span class="tiny">Карточка слова</span><span class="analysis-count">7 ПРИЗНАКОВ</span></div>
+<table class="declension-table analysis-table"><tbody>
+<tr><td>Часть речи</td><td>Имя существительное</td></tr>
+<tr><td>Начальная форма</td><td>макет</td></tr>
+<tr><td>Разряд</td><td>нарицательное</td></tr>
+<tr><td>Одушевлённость</td><td>неодушевлённое</td></tr>
+<tr><td>Род / склонение</td><td>мужской / 2-е</td></tr>
+<tr><td>Число / падеж</td><td>ед. ч. / И. п.</td></tr>
+<tr><td>Роль</td><td>подлежащее</td></tr>
+</tbody></table>
+</div>
+</div>
+</div>
+</section>
+<section class="slide yellow noun-practice-slide" data-notes="Первое задание: найди все существительные в предложении. Здесь правильные ответы: ветер, запах, дождя, сад. „Принёс“ — глагол; „зелёный“ — прилагательное; „в“ — предлог; „тихий“ — прилагательное. Нажимайте на слова и затем проверяйте себя." data-time="0:40">
+<div class="content"><div class="eyebrow">15 / практика: найди слова</div><h2>НАЙДИ ВСЕ<br/><em>СУЩЕСТВИТЕЛЬНЫЕ.</em></h2><p class="lead" style="margin-top:10px">Нажми на все существительные, затем выбери «Проверить».</p><div class="tokens-line" id="nounQuiz"><button class="token" data-noun="yes">Ветер</button> <button class="token" data-noun="no">принёс</button> <button class="token" data-noun="yes">запах</button> <button class="token" data-noun="yes">дождя</button> <button class="token" data-noun="no">в</button> <button class="token" data-noun="no">зелёный</button> <button class="token" data-noun="yes">сад</button>.</div><div class="quiz-bar"><button class="action" id="checkNouns">Проверить ↗</button><button class="pill" id="resetNouns">Сбросить</button><span class="quiz-score" id="quizScore">0 / 4 · Выдели все существительные</span></div></div>
+</section>
+<section class="slide blue rapid-quiz-slide" data-notes="Здесь важна не форма сама по себе, а синтаксическая роль и контекст. В «я вижу брата» слово «брата» отвечает на вопрос «вижу кого?» и стоит в винительном падеже, хотя форма совпадает с родительным. Во множественном числе «друзей» тоже может быть родительным («встреча друзей») или винительным («встретил друзей»). Пусть аудитория объясняет не только ответ, но и ход рассуждения." data-time="1:10">
+<div class="content"><div class="eyebrow">16 / квиз с подвохом · падежи</div><h2>ФОРМА ОДНА.<br/><em>ПАДЕЖИ РАЗНЫЕ.</em></h2>
+<p class="lead quiz-lead">Не угадывай по окончанию. Прочитай фразу и выясни, какую работу выполняет слово.</p>
+<div class="quiz-questions trick-questions" id="rapidQuiz">
+<div class="quiz-question" data-q="1"><span class="quiz-stamp">ЛОВУШКА 01</span><h3>«Я вижу брата». Какой падеж у слова «брата»?</h3><div class="options"><button class="option" data-correct="no">Родительный — окончание -а</button><button class="option" data-correct="yes" data-explanation="Верно: вижу кого? — брата. Это винительный падеж. У одушевлённых существительных мужского рода форма В. п. совпадает с Р. п.">Винительный — вижу кого?</button><button class="option" data-correct="no">Творительный — действующее лицо</button></div><div class="feedback"></div></div>
+<div class="quiz-question" data-q="2"><span class="quiz-stamp">ЛОВУШКА 02</span><h3>«Встреча друзей». «Друзей» — это…</h3><div class="options"><button class="option" data-correct="yes" data-explanation="Да: встреча кого? — друзей. Здесь зависимое слово обозначает участников встречи, родительный падеж.">Родительный: встреча кого?</button><button class="option" data-correct="no">Винительный: кого встретили?</button><button class="option" data-correct="no">Именительный: кто встретился?</button></div><div class="feedback"></div></div>
+<div class="quiz-question" data-q="3"><span class="quiz-stamp">ЛОВУШКА 03</span><h3>«Я встретил друзей». Падеж слова «друзей» теперь…</h3><div class="options"><button class="option" data-correct="no">Родительный — форма же та же</button><button class="option" data-correct="yes" data-explanation="Точно: встретил кого? — друзей. Это винительный падеж. Совпадающее окончание не отменяет роли слова в предложении.">Винительный: встретил кого?</button><button class="option" data-correct="no">Предложный: о ком?</button></div><div class="feedback"></div></div>
+</div><div class="quiz-bar"><span class="quiz-score" id="rapidScore">0 / 3 · проверяй логику, не окончание</span><button class="pill" id="resetRapid">Начать заново</button></div>
+</div></section>
+<section class="slide cream context-quiz-slide" data-notes="Это проверка на контекст. В сочетании «дежурный врач» слово «дежурный» характеризует существительное «врач» и выступает как прилагательное. В предложении «дежурный вошёл» оно называет самого человека и употребляется как существительное — это субстантивация. Во втором вопросе важно отвергнуть абсолютное правило: прилагательное может быть употреблено самостоятельно, если существительное понятно из контекста, а в некоторых случаях происходит переход в существительное." data-time="1:00">
+<div class="content"><div class="eyebrow">17 / квиз с подвохом · контекст</div><h2>ОДНО СЛОВО.<br/><em>ДВЕ РОЛИ.</em></h2>
+<p class="lead quiz-lead">Иногда важнее не то, как слово выглядит, а то, что оно делает в предложении.</p>
+<div class="quiz-questions context-questions" id="contextQuiz">
+<div class="quiz-question" data-q="1"><span class="quiz-stamp">КОНТЕКСТ 01</span><h3>В какой фразе «дежурный» уже называет человека, а не описывает врача?</h3><div class="options"><button class="option" data-correct="no">Дежурный врач открыл дверь.</button><button class="option" data-correct="yes" data-explanation="Верно: «дежурный» сам называет человека. Это субстантивированное прилагательное — слово используется в роли существительного.">Дежурный открыл дверь.</button><button class="option" data-correct="no">Врач был дежурным сегодня.</button></div><div class="feedback"></div></div>
+<div class="quiz-question" data-q="2"><span class="quiz-stamp">КОНТЕКСТ 02</span><h3>«Мне нравится красный». Почему фраза всё равно понятна?</h3><div class="options"><button class="option" data-correct="no">Прилагательное никогда не связано с существительным.</button><button class="option" data-correct="yes" data-explanation="Именно: существительное («цвет», «вариант», «предмет») понятно из ситуации и может опускаться. В отдельных контекстах прилагательное также употребляется как существительное.">Существительное подразумевается из контекста.</button><button class="option" data-correct="no">«Красный» всегда только существительное.</button></div><div class="feedback"></div></div>
+</div><div class="quiz-bar"><span class="quiz-score" id="contextScore">0 / 2 · думай о роли слова</span><button class="pill" id="resetContext">Начать заново</button></div>
+<div class="context-microcopy">СЕКРЕТНЫЙ УРОВЕНЬ: контекст иногда важнее окончания.</div>
+</div></section>
+<section class="slide summary-slide" data-notes="Собери всё в короткую формулу: существительное называет предмет в широком смысле; отвечает на вопросы кто? что?; имеет род, число и падеж; изменяется по падежам и числам, хотя есть ограничения; в предложении выполняет синтаксическую роль. Не нужно зачитывать всё — пусть три больших слова останутся как визуальный итог." data-time="0:35">
+<div class="content"><div class="eyebrow">18 / если запомнить только три вещи</div><h2>ТРИ ОПОРЫ.<br/><em>ВСЁ ОСТАЛЬНОЕ — ДЕТАЛИ.</em></h2><div class="grid3"><div class="card"><span class="tag">01 / значение</span><span class="word">НАЗЫВАЕТ</span><p>Предмет, лицо, явление, чувство, действие, состояние.</p></div><div class="card"><span class="tag">02 / вопрос</span><span class="word">КТО?<br/>ЧТО?</span><p>Начни с вопроса, а затем проверь слово в контексте.</p></div><div class="card"><span class="tag">03 / форма</span><span class="word">ИЗМЕНЯЕТСЯ</span><p>Род, число, падеж и склонение помогают описать слово.</p></div></div><div class="formula" style="margin-top:26px">ИМЯ СУЩЕСТВИТЕЛЬНОЕ = СЛОВО, КОТОРОЕ НАЗЫВАЕТ МИР.</div></div>
+</section>
+<section class="slide cream sources-slide" data-notes="Источники и опоры можно оставить на экране в конце или открыть перед вопросами. Основная часть презентации следует школьному курсу морфологии русского языка; уточняющие формулировки сверяй с учебником и требованиями учителя. Ссылку на Грамоту.ру используй как справочный ресурс, а не вместо учебной программы." data-time="0:20">
+<div class="content"><div class="eyebrow">19 / откуда берутся правила</div><h2>ГРАММАТИКА —<br/><em>НЕ МНЕНИЕ.</em></h2><p class="lead muted" style="margin-top:14px">Проверяй формулировки по школьному учебнику и справочным источникам.</p><div class="source-list"><div class="source"><b>Школьный курс русского языка</b><p>Морфология: имя существительное, род, число, падеж, склонение и синтаксическая роль.</p></div><div class="source"><b>Грамота.ру</b><p>Справочный портал по русскому языку: словари, ответы и правила.</p><a href="https://gramota.ru/" rel="noreferrer" target="_blank">gramota.ru ↗</a></div></div><div class="note-strip"><b>Примечание</b><span>В школе порядок морфологического разбора может немного отличаться в зависимости от учебника.</span></div></div>
+</section>
+<section class="slide dark credits-slide" data-notes="Это финальные титры. Не комментируй каждый факт — дай им спокойно пройти на экране. Можно закончить словами: «Мы называем мир, чтобы замечать его точнее. А теперь попробуйте заметить слово, которое обычно проскальзывает мимо». На экране есть несколько языковых пасхалок и аккуратная шутка про пса с первого слайда." data-time="1:40">
+<div class="credits-stage" aria-label="Кинематографические титры с фактами о русском языке">
+<div class="credits-grain" aria-hidden="true"></div>
+<div class="credits-roll" id="creditsRoll">
+<div class="credits-opening"><span class="credits-overline">РУССКИЙ ЯЗЫК · МОРФОЛОГИЯ</span><h2>ИМЯ<br/><em>СУЩЕСТВИТЕЛЬНОЕ</em></h2><p class="credits-tagline">МИР НАЧИНАЕТСЯ С ИМЕНИ.</p><div class="credits-author"><strong>АЛИХАН БЕКТУРОВ</strong><span>SCA-26A</span></div></div>
+<div class="credit-divider">✳　✳　✳</div>
+<article class="credit-fact"><span>ФАКТ 01 · НЕ ТОЛЬКО ВЕЩИ</span><h3>ДРУЖБА — ТОЖЕ<br/>«ПРЕДМЕТ».</h3><p>В грамматике это слово шире бытового смысла: существительное может называть чувство, состояние, действие или явление.</p></article>
+<article class="credit-fact"><span>ФАКТ 02 · ПАДЕЖ-ИЛЛЮЗИОНИСТ</span><h3>«Я ВИЖУ БРАТА» —<br/><em>ВИНИТЕЛЬНЫЙ.</em></h3><p>Форма совпадает с родительным, но вопрос «вижу кого?» и роль в предложении показывают винительный падеж.</p></article>
+<article class="credit-fact"><span>ФАКТ 03 · ПРИЗНАК И ОБЪЕКТ</span><h3>КРАСНЫЙ —<br/>КАКОЙ ИМЕННО?</h3><p>Прилагательное обычно уточняет признак существительного. Но контекст умеет многое: «мне нравится красный» — и объект уже можно не называть.</p></article>
+<article class="credit-fact"><span>ФАКТ 04 · ГРАММАТИЧЕСКОЕ ЧИСЛО</span><h3>ОДНИ НОЖНИЦЫ.<br/>МНОЖЕСТВЕННОЕ ЧИСЛО.</h3><p>Некоторые существительные обычно употребляются только во множественном числе — даже если обозначают один предмет.</p></article>
+<article class="credit-fact"><span>ФАКТ 05 · СЛОВО-ИСКЛЮЧЕНИЕ</span><h3>ПУТЬ — ОН.<br/>И ОН НЕ КАК ВСЕ.</h3><p>«Путь» — разносклоняемое существительное. У слова свой маршрут по падежам.</p></article>
+<article class="credit-fact"><span>ФАКТ 06 · ИМЯ И ТИП</span><h3>БИШКЕК — ИМЯ.<br/>ГОРОД — КЛАСС.</h3><p>Собственное имя выделяет конкретный объект; нарицательное слово называет тип объектов.</p></article>
+<article class="credit-fact"><span>ФАКТ 07 · ОДНА ФОРМА, ДВЕ РОЛИ</span><h3>«ВСТРЕЧА ДРУЗЕЙ»<br/>≠ «ВСТРЕТИЛ ДРУЗЕЙ».</h3><p>Форма одна, падежи разные: родительный отвечает на «встреча кого?», винительный — на «встретил кого?».</p></article>
+<article class="credit-fact"><span>ФАКТ 08 · СЛОВО, КОТОРОЕ НЕ МЕНЯЕТСЯ</span><h3>ПАЛЬТО<br/><em>НЕ СКЛОНЯЕТСЯ.</em></h3><p>«Надел пальто», «нет пальто», «доволен пальто» — форма остаётся той же. При этом пальто — существительное среднего рода: моё пальто.</p></article>
+<article class="credit-fact"><span>ФАКТ 09 · КОШАЧЬЯ ГРАММАТИКА</span><h3>КОШКА — ОНА.<br/>ЖИВОТНОЕ — ОНО.</h3><p>Речь может идти об одном и том же живом существе, но грамматический род зависит от слова: кошка — женский, кот — мужской, животное — средний.</p></article>
+<article class="credit-fact"><span>ФАКТ 10 · ГЛАСНАЯ-НЕВИДИМКА</span><h3>КОТЁНОК →<br/><em>КОТЁНКА.</em></h3><p>В форме «котёнка» исчезает безударная «о» после «н» в слове «котёнок». Такие гласные называют беглыми: щенок — щенка, день — дня.</p></article>
+<article class="credit-fact"><span>ФАКТ 11 · ДЕЙСТВИЕ СТАЛО ИМЕНЕМ</span><h3>МУРЛЫКАТЬ →<br/><em>МУРЛЫКАНЬЕ.</em></h3><p>Глагол называет действие, а существительное «мурлыканье» превращает его в то, о чём можно говорить: «мурлыканье кота слышно из соседней комнаты».</p></article>
+<article class="credit-fact"><span>ФАКТ 12 · ОДИН КОТ — ШЕСТЬ ФОРМ</span><h3>КОТ. КОТА. КОТУ.<br/>КОТА. КОТОМ. О КОТЕ.</h3><p>Это один и тот же предмет речи, но окончания показывают, как слово связано с другими словами: кто пришёл, нет кого, дать кому, вижу кого, доволен кем, думаю о ком.</p></article>
+<div class="credit-divider">✳　✳　✳</div>
+<article class="credit-easter"><span>СЕКРЕТНЫЙ КАДР</span><h3>ПЁС С ПЕРВОГО СЛАЙДА<br/>ВСЁ ЕЩЁ ЖДЁТ ДЕНЬГИ.</h3><p>С процентами. Моральными.</p></article>
+<div class="credits-ending"><p>СПАСИБО ЗА ВНИМАНИЕ</p><h2>ЗАМЕЧАЙТЕ<br/><em>СЛОВА.</em></h2><div class="credits-author"><strong>АЛИХАН БЕКТУРОВ</strong><span>SCA-26A</span></div><small>КОНЕЦ ПРЕЗЕНТАЦИИ · НАЧАЛО НАБЛЮДЕНИЙ</small></div>
+</div>
+<button type="button" class="credits-skip" id="creditsSkip">УСКОРИТЬ ТИТРЫ ↗</button>
+</div>
+</section>
+</main>
+<aside class="panel" id="notesPanel"><h3>Заметки докладчика</h3><div class="tiny" id="noteTime">ПРИМЕРНОЕ ВРЕМЯ · 0:35</div><p id="noteText" style="margin-top:13px">Начни с паузы и задай тон.</p><p class="tiny" style="margin-top:14px">Клавиша N — открыть / закрыть</p></aside>
+<aside class="panel" id="helpPanel"><h3>Управление</h3><div class="keyboard-grid"><kbd>→ / пробел</kbd><span>Следующий слайд</span><kbd>←</kbd><span>Предыдущий слайд</span><kbd>Home / End</kbd><span>В начало / в конец</span><kbd>N</kbd><span>Заметки докладчика</span><kbd>F</kbd><span>Полноэкранный режим</span><kbd>?</kbd><span>Это окно подсказки</span><kbd>Esc</kbd><span>Закрыть панели</span></div></aside>
+<button class="advance" id="advance" type="button"><span id="advanceText">СЛЕДУЮЩИЙ ПРИМЕР</span><span aria-hidden="true">↗</span></button>
+<footer class="footer"><div class="footer-left"><span id="clock">00:00</span></div><div class="footer-mid"><span id="counter">01 / 32</span><div class="progress"><span id="progress"></span></div><span>КЛАВИШИ ← →</span></div><div class="footer-right"><nav class="nav"><button class="mini" id="notesBtn" title="Заметки (N)">N</button><button class="mini" id="helpBtn" title="Подсказка (?)">?</button><button class="mini" id="fullBtn" title="Полный экран (F)">⛶</button><button aria-label="Предыдущий слайд" id="prev">←</button><button aria-label="Следующий слайд" id="next">→</button></nav></div></footer>
+</div>
+<script>
+(()=>{
+ const deck=document.getElementById('deck');
+ const slides=[...document.querySelectorAll('.slide')];
+ const counter=document.getElementById('counter'),progress=document.getElementById('progress'),clock=document.getElementById('clock');
+ const panels=[document.getElementById('notesPanel'),document.getElementById('helpPanel')];
+ let index=0,started=performance.now(),touchX=null;
+ const pad=n=>String(n).padStart(2,'0');
+ function closePanels(){panels.forEach(p=>p.classList.remove('open'))}
+ function togglePanel(p){const was=p.classList.contains('open');closePanels();if(!was)p.classList.add('open')}
+ function positionCreditsEnd(){
+   const roll=document.getElementById('creditsRoll');
+   const endTitle=roll?.querySelector('.credits-ending h2');
+   if(!roll||!endTitle)return;
+   // The final words stop around 42% of the viewport, clear of the bottom controls.
+   const stopY=Math.round(window.innerHeight*.42-(endTitle.offsetTop+endTitle.offsetHeight/2));
+   roll.style.setProperty('--credits-stop-y',stopY+'px');
+ }
+ function show(n){
+   index=Math.max(0,Math.min(slides.length-1,n));
+   slides.forEach((s,i)=>{s.classList.toggle('active',i===index);s.classList.toggle('before',i<index);s.setAttribute('aria-hidden',i===index?'false':'true')});
+   counter.textContent=pad(index+1)+' / '+pad(slides.length);progress.style.width=((index+1)/slides.length*100)+'%';
+   document.getElementById('noteText').textContent=slides[index].dataset.notes||'Для этого слайда специальных заметок нет.';
+   document.getElementById('noteTime').textContent='ПРИМЕРНОЕ ВРЕМЯ · '+(slides[index].dataset.time||'—');
+   history.replaceState(null,'','#'+(index+1));closePanels();refreshAdvance();
+   if(slides[index].classList.contains('credits-slide')){
+     const roll=document.getElementById('creditsRoll');
+     const skip=document.getElementById('creditsSkip');
+     roll.classList.remove('fast-roll');skip.disabled=false;skip.textContent='УСКОРИТЬ ТИТРЫ ↗';
+     positionCreditsEnd();
+   }
+ }
+ document.getElementById('prev').addEventListener('click',()=>show(index-1));document.getElementById('next').addEventListener('click',()=>show(index+1));
+ document.getElementById('notesBtn').addEventListener('click',()=>togglePanel(document.getElementById('notesPanel')));document.getElementById('helpBtn').addEventListener('click',()=>togglePanel(document.getElementById('helpPanel')));
+ function toggleFullscreen(){if(!document.fullscreenElement)document.documentElement.requestFullscreen?.();else document.exitFullscreen?.()}
+ document.getElementById('fullBtn').addEventListener('click',toggleFullscreen);
+ document.addEventListener('keydown',e=>{const tag=e.target?.tagName?.toLowerCase();const editing=['input','textarea'].includes(tag);if(editing&&e.key!=='Escape')return;if(['ArrowRight',' ','PageDown'].includes(e.key)){e.preventDefault();show(index+1)}else if(['ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();show(index-1)}else if(e.key==='Home')show(0);else if(e.key==='End')show(slides.length-1);else if(e.key.toLowerCase()==='n')togglePanel(document.getElementById('notesPanel'));else if(e.key.toLowerCase()==='f')toggleFullscreen();else if(e.key==='?')togglePanel(document.getElementById('helpPanel'));else if(e.key==='Escape')closePanels()});
+ document.addEventListener('touchstart',e=>{touchX=e.changedTouches[0].screenX},{passive:true});document.addEventListener('touchend',e=>{if(touchX===null)return;const dx=e.changedTouches[0].screenX-touchX;if(Math.abs(dx)>70)show(index+(dx<0?1:-1));touchX=null},{passive:true});
+ document.querySelectorAll('[data-reveal]').forEach(card=>card.addEventListener('click',()=>{card.classList.toggle('revealed')}));
+ const genderTexts={m:'МАКЕТ — мужской род: он мой макет.',f:'ИДЕЯ — женский род: она моя идея.',n:'РЕШЕНИЕ — средний род: оно моё решение.'};document.getElementById('genderGrid').addEventListener('click',e=>{const b=e.target.closest('[data-gender]');if(!b)return;document.querySelectorAll('.gender-card').forEach(x=>x.classList.toggle('selected',x===b));document.getElementById('genderResult').textContent=genderTexts[b.dataset.gender]});
+ const singular=document.getElementById('singularWord'),plural=document.getElementById('pluralWord'),numberExplain=document.getElementById('numberExplain');document.querySelectorAll('[data-number]').forEach(b=>b.addEventListener('click',()=>{const many=b.dataset.number==='many';document.querySelectorAll('[data-number]').forEach(x=>x.classList.toggle('selected',x===b));singular.classList.toggle('active',!many);plural.classList.toggle('active',many);numberExplain.textContent=many?'Несколько макетов · множественное число.':'Единственное число — один макет.'}));
+ const caseExamples=[['Книга лежит на столе.','ИМЕНИТЕЛЬНЫЙ · КТО? ЧТО? НАЗЫВАЕМ ТО, О ЧЁМ ГОВОРИМ.','Книга'],['На столе нет книги.','РОДИТЕЛЬНЫЙ · КОГО? ЧЕГО? ЧАСТО — НЕТ КОГО? ЧЕГО?','книги'],['Я рад книге.','ДАТЕЛЬНЫЙ · КОМУ? ЧЕМУ?','книге'],['Я читаю книгу.','ВИНИТЕЛЬНЫЙ · КОГО? ЧТО?','книгу'],['Я любуюсь книгой.','ТВОРИТЕЛЬНЫЙ · КЕМ? ЧЕМ?','книгой'],['Я думаю о книге.','ПРЕДЛОЖНЫЙ · О КОМ? О ЧЁМ? ЧАСТО С ПРЕДЛОГОМ.','о книге']];
+ document.getElementById('caseGrid').addEventListener('click',e=>{const b=e.target.closest('[data-case]');if(!b)return;document.querySelectorAll('#caseGrid .case-button').forEach(x=>x.classList.toggle('active',x===b));const [sent,explain,word]=caseExamples[Number(b.dataset.case)];const out=document.getElementById('caseSentence');out.textContent='';const span=document.createElement('span');span.textContent=word;const at=sent.indexOf(word);if(at>=0)out.append(document.createTextNode(sent.slice(0,at)),span,document.createTextNode(sent.slice(at+word.length)));else out.textContent=sent;document.getElementById('caseExplain').textContent=explain;});
+ function celebrate(slide){
+   if(!slide)return;
+   const old=slide.querySelector('.celebration-layer');if(old)old.remove();
+   const layer=document.createElement('div');layer.className='celebration-layer';layer.setAttribute('aria-hidden','true');
+   const colors=['#f0dc57','#e74737','#374fe2','#437a5b','#fffaf1'];
+   for(let i=0;i<34;i++){
+     const bit=document.createElement('span');bit.className='confetti-bit';
+     bit.style.setProperty('--x',(Math.random()*100)+'%');bit.style.setProperty('--w',(5+Math.random()*7)+'px');bit.style.setProperty('--h',(7+Math.random()*10)+'px');bit.style.setProperty('--c',colors[i%colors.length]);bit.style.setProperty('--r',(Math.random()*360)+'deg');bit.style.setProperty('--delay',(Math.random()*.26)+'s');bit.style.setProperty('--drift',((Math.random()-.5)*170)+'px');layer.appendChild(bit);
+   }
+   slide.appendChild(layer);window.setTimeout(()=>layer.remove(),2100);
+ }
+ const tokens=[...document.querySelectorAll('#nounQuiz .token')];
+ const nounScore=document.getElementById('quizScore');const nounSlide=document.getElementById('nounQuiz').closest('.slide');
+ tokens.forEach(t=>{t.setAttribute('aria-pressed','false');t.addEventListener('click',()=>{t.classList.toggle('marked');t.setAttribute('aria-pressed',t.classList.contains('marked')?'true':'false');t.classList.remove('wrong','is-correct');nounScore.classList.remove('success')})});
+ document.getElementById('checkNouns').addEventListener('click',()=>{
+   let matched=0,selectedNouns=0,falsePositives=0,needed=0;
+   tokens.forEach(t=>{
+     const isMarked=t.classList.contains('marked'),yes=t.dataset.noun==='yes';
+     if(yes)needed++;if(isMarked&&yes)selectedNouns++;if(isMarked&&!yes)falsePositives++;
+     if(isMarked===yes)matched++;
+     t.classList.toggle('wrong',isMarked&&!yes);t.classList.remove('is-correct');
+   });
+   const exact=matched===tokens.length;
+   if(exact){tokens.filter(t=>t.dataset.noun==='yes').forEach(t=>t.classList.add('is-correct'));nounScore.textContent='БЕЗ ОШИБОК · '+needed+' ИЗ '+needed+' СУЩЕСТВИТЕЛЬНЫХ!';nounScore.classList.add('success');nounSlide.classList.add('quiz-perfect');celebrate(nounSlide);}
+   else {nounScore.classList.remove('success');nounScore.textContent=selectedNouns+' / '+needed+' существительных найдено'+(falsePositives?' · лишних слов: '+falsePositives:'')+'. Проверь выделение ещё раз.';}
+ });
+ document.getElementById('resetNouns').addEventListener('click',()=>{tokens.forEach(t=>{t.classList.remove('marked','wrong','is-correct');t.setAttribute('aria-pressed','false')});nounScore.classList.remove('success');nounScore.textContent='0 / 4 · Выдели все существительные';});
+ function initChoiceQuiz(rootId, scoreId, resetId, perfectText){
+   const root=document.getElementById(rootId);if(!root)return;
+   const rows=[...root.querySelectorAll('.quiz-question')];
+   const score=document.getElementById(scoreId),slide=root.closest('.slide');
+   let celebrated=false;
+   function update(){
+     let answered=0,correct=0;
+     rows.forEach(row=>{
+       const chosen=row.querySelector('.option.correct,.option.incorrect');
+       const solved=!!chosen&&chosen.classList.contains('correct');
+       row.classList.toggle('solved',solved);
+       if(chosen){answered++;if(solved)correct++;}
+     });
+     const perfect=answered===rows.length&&correct===rows.length;
+     score.textContent=perfect?perfectText:(correct+' / '+rows.length+' верно · '+answered+' / '+rows.length+' решено');
+     score.classList.toggle('success',perfect);slide.classList.toggle('quiz-perfect',perfect);
+     if(perfect&&!celebrated){celebrated=true;celebrate(slide);}else if(!perfect){celebrated=false;}
+   }
+   rows.forEach(row=>row.querySelectorAll('.option').forEach(btn=>{
+     btn.setAttribute('aria-pressed','false');
+     btn.addEventListener('click',()=>{
+       row.querySelectorAll('.option').forEach(x=>{x.classList.remove('correct','incorrect','answer-key');x.setAttribute('aria-pressed','false')});
+       btn.setAttribute('aria-pressed','true');
+       const good=btn.dataset.correct==='yes';btn.classList.add(good?'correct':'incorrect');
+       const feedback=row.querySelector('.feedback');
+       if(good){feedback.textContent=btn.dataset.explanation||'Верно. Хорошая работа с контекстом.';}
+       else {const right=row.querySelector('.option[data-correct="yes"]');right.classList.add('answer-key');feedback.textContent='Подсказка: '+(right.dataset.explanation||('правильный ответ — «'+right.textContent.trim()+'».'));}
+       update();
+     });
+   }));
+   document.getElementById(resetId).addEventListener('click',()=>{
+     rows.forEach(row=>{row.classList.remove('solved');row.querySelectorAll('.option').forEach(x=>{x.classList.remove('correct','incorrect','answer-key');x.setAttribute('aria-pressed','false')});row.querySelector('.feedback').textContent='';});
+     celebrated=false;slide.classList.remove('quiz-perfect');score.classList.remove('success');update();
+   });
+   update();
+ }
+ initChoiceQuiz('rapidQuiz','rapidScore','resetRapid','ЛОГИКА ПОБЕДИЛА · 3 ИЗ 3!');
+ initChoiceQuiz('contextQuiz','contextScore','resetContext','КОНТЕКСТ ПОБЕЖДЁН · 2 ИЗ 2!');
+ document.querySelectorAll('[data-adjective]').forEach(btn=>btn.addEventListener('click',()=>{
+   const examples=[['М','МУЖСКОЙ РОД','МАКЕТ','красный макет','КРАСНЫЙ ↔ МАКЕТ · ОН МОЙ'],['М','СРЕДНИЙ РОД','МОРЕ','холодное море','ХОЛОДНОЕ ↔ МОРЕ · ОНО МОЁ'],['У','ЖЕНСКИЙ РОД','УЛИЦА','тихая улица','ТИХАЯ ↔ УЛИЦА · ОНА МОЯ']];
+   const [glyph,gender,noun,phrase,agreement]=examples[Number(btn.dataset.adjective)];
+   document.querySelectorAll('[data-adjective]').forEach(x=>x.classList.toggle('selected',x===btn));
+   const specimen=document.getElementById('nounSpecimen');specimen.querySelector('.noun-glyph').textContent=glyph;specimen.querySelector('small').textContent=gender;specimen.querySelector('strong').textContent=noun;specimen.querySelector('em').textContent=phrase;document.getElementById('agreeNote').textContent=agreement;
+   specimen.style.transform='rotate(-1.4deg) scale(1.015)';window.setTimeout(()=>{specimen.style.transform='rotate(1.2deg) scale(1)'},180);
+ }));
+ document.getElementById('creditsSkip').addEventListener('click',()=>{const roll=document.getElementById('creditsRoll');roll.classList.add('fast-roll');document.getElementById('creditsSkip').textContent='ТИТРЫ УСКОРЕНЫ';document.getElementById('creditsSkip').disabled=true;});
+ const advance=document.getElementById('advance'),advanceText=document.getElementById('advanceText');const cycleMap={1:{selector:'#mysteryGrid .card',cls:'revealed',label:'СЛЕДУЮЩАЯ КАРТОЧКА'},5:{selector:'.dependency-slide [data-adjective]',cls:'selected',label:'СЛЕДУЮЩИЙ ПРИЗНАК'},7:{selector:'#genderGrid .gender-card',cls:'selected',label:'СЛЕДУЮЩИЙ РОД'},8:{selector:'.slide.active [data-number]',cls:'selected',label:'СЛЕДУЮЩАЯ ФОРМА'},10:{selector:'#caseGrid .case-button',cls:'active',label:'СЛЕДУЮЩИЙ ПАДЕЖ'}};function refreshAdvance(){const conf=cycleMap[index];advance.classList.toggle('visible',!!conf);if(conf)advanceText.textContent=conf.label}advance.addEventListener('click',()=>{const conf=cycleMap[index];if(!conf)return;const nodes=[...document.querySelectorAll(conf.selector)];if(!nodes.length)return;let target;if(conf.cls==='revealed'){target=nodes.find(x=>!x.classList.contains(conf.cls))||nodes[0];target.classList.add('revealed');target.setAttribute('aria-expanded','true');const all=nodes.every(x=>x.classList.contains('revealed'));const result=document.getElementById('mysteryResult');if(result)result.textContent=all?'Все четыре слова найдены. Даже пёс согласен — хотя он всё ещё ждёт деньги.':'Открыто '+nodes.filter(x=>x.classList.contains('revealed')).length+' из '+nodes.length+'. Продолжай исследование.';}else{let i=nodes.findIndex(x=>x.classList.contains(conf.cls));nodes[(i+1+nodes.length)%nodes.length].click();}});
+ window.addEventListener('resize',()=>{if(slides[index]?.classList.contains('credits-slide'))positionCreditsEnd();},{passive:true});
+ const startHash=Number(location.hash.slice(1));if(startHash>0&&startHash<=slides.length)index=startHash-1;show(index);
+ setInterval(()=>{const seconds=Math.floor((performance.now()-started)/1000);clock.textContent=pad(Math.floor(seconds/60))+':'+pad(seconds%60)},1000);
+ document.addEventListener('pointermove',e=>{deck.style.setProperty('--mx',e.clientX+'px');deck.style.setProperty('--my',e.clientY+'px')},{passive:true});
+})();
+</script>
+</body>
+</html>
